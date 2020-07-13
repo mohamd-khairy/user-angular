@@ -283,25 +283,7 @@ input#validationCustom01 {
   border-radius: 10px !important;
   background-color: #959595 !important;
 }
-// .next-page {
-//   border: 1px solid #bfbfbf;
-//   width: 343px;
-//   height: 53px;
-//   position: relative;
-//   border-radius: 5px;
-// }
-// .paginate {
 
-//   width: 53px;
-//   display: inline-block;
-//   height: 100%;
-//   line-height: 44px;
-//   text-align: center;
-//   border-right: 1px solid #bfbfbf;
-//   color: #23a1a2;
-//   cursor: pointer;
-//   font-size: 18px;
-// }
 :host ::ng-deep ul.ngx-pagination.ng-star-inserted {
   display: flex;
   align-items: center;
@@ -347,26 +329,6 @@ width: 100px;
 :host ::ng-deep a.ng-star-inserted {
 padding: 0;
 }
-
-// .next-page span {
-//   width: 53px;
-//   display: inline-block;
-//   height: 100%;
-//   line-height: 44px;
-//   text-align: center;
-//   border-right: 1px solid #bfbfbf;
-//   color: #23a1a2;
-//   cursor: pointer;
-//   font-size: 18px;
-// }
-// .next-page span:last-child {
-//   width: 76px;
-//   border-right: 0;
-// }
-// .next-page span.active {
-//   color: #fff;
-//   background: #23a1a2;
-// }
 
 ::ng-deep pagination-controls.paginate {
   border: 1px solid #BFBFBF;
@@ -439,15 +401,7 @@ p.resul-detile {
     color: #24A2A3;
     border: 1px solid #00000033;
   }
- 
-//  input {
-//     width: 145px;
-//     padding: 3px 6px;
-//     height: 40px;
-//     border-radius: 3px;
-//     color: #00000033;
-//     border: 1px solid #00000033;
-//   }
+
 }
 :host ::ng-deep  span.mat-button-wrapper{
   position: relative;
@@ -539,34 +493,6 @@ span.descound {
   margin-left: 0.5rem !important;
 }
 
-
-// input[type="date"] {
-//   position: relative;
-//   padding: 10px;
-// }
-
-// input[type="date"]::-webkit-calendar-picker-indicator {
-//   color: transparent;
-//   background: none;
-//   z-index: 1;
-// }
-
-// input[type="date"]:before {
-//   color: transparent;
-//   background: none;
-//   display: block;
-//   font-family: 'FontAwesome';
-//   content: '\f078';
-//   /* This is the calendar icon in FontAwesome */
-//   width: 15px;
-//   height: 20px;
-//   position: absolute;
-//   top: 12px;
-//   right: 15px;
-//   color: #999;
-// }
-
-
 // ***************************************medi-screen*********************************************
 @media only screen and (max-width:1680px){
   .fits-with-btn{
@@ -639,107 +565,6 @@ span.descound {
   }
   .right-side-home-catering {
     width: calc(100% - 320px);
-  }
-}
-
-// // *************************** end-width ************************************
-@media only screen and (max-width: 1440px) and (min-width: 1370px){
-  .home-catering{
-    padding: 0 140px;
-  }
-  .fits-with-btn{
-    padding: 5px 6px;
-    width: max-content;
-    height: 30px;
-  }
-  .fits-with span {
-    font-size: 13px;
-    width: max-content;
-  }
-  .price{
-    font-size: 14px;
-  }
-  .fits-with-right{
-    margin: 0 5px;
-  }
-  .fits-with-left em{
-    width: 
-    15px !important;
-  }
-  .fits-with-right-span{
-    width: 20px !important;
-  }
-  .left-side-home-catering {
-    width: 315px;
-  }
-  .right-side-home-catering {
-    width: calc(100% - 320px);
-  }
-  
-}
-// // *************************** end-width ************************************
-@media only screen and (max-width: 1369px) and (min-width: 1280px){
-  .home-catering{
-    padding: 0 120px;
-  }
-  .fits-with-btn{
-    padding: 5px 6px;
-    width: max-content;
-    height: 30px;
-    position: relative;
-    top: 15px;
-  }
-  .fits-with span {
-    font-size: 16px;
-  }
-  .price{
-    font-size: 16px;
-  }
-  .fits-with-right{
-    margin: 0 5px;
-    position: relative;
-    height: 50px;
-    align-items: center;
-    top: 18px;
-    justify-content: flex-end;
-  }
-  .fits-with-left em{
-    width: 15px !important;
-  }
-  .fits-with.d-flex.justify-content-between{
-    display: block !important;
-    .fits-with-left{
-      display: block ;
-      width: 100% !important;
-    }
-  }
-  .Discover-more a{
-    width: 33%;
-  }
-}
-// *************************** end-width ****************************
-@media only screen and (max-width: 1280px) and (min-width: 1200px){
-  .home-catering{
-    padding: 0 100px;
-  }
-  .fits-with-btn{
-    padding: 5px 6px;
-    width: max-content;
-  }
-  .fits-with span {
-    font-size: 16px;
-  }
-  .price{
-    font-size: 16px;
-  }
-  .fits-with-right{
-    margin: 0 5px;
-  }
-  .fits-with-left em{
-    width: 15px !important;
-  }
-  .Discover-more a{
-    width: 50%;
   }
 }
 
