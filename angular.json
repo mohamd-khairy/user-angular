@@ -77,7 +77,8 @@
             "ar": {
               "localize": [
                 "ar"
-              ]
+              ],
+              "baseHref": "/ar/"
             }
           }
         },
