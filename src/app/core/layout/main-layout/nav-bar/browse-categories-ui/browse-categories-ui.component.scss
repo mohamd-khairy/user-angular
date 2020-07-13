@@ -1,0 +1,136 @@
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown >a{
+  display: flex;
+  .mat-icon{
+    margin: 0 5px;
+    position: relative;
+    bottom: 4px;
+  }
+}
+li:first-child {
+  margin-left: 0 !important;
+  padding-top: 10px;
+  padding-left: 0px;
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  &:hover {
+    color: #23a1a2 !important;
+    background: none;
+  }
+  .icon-nav {
+    color: #464646;
+  }
+  &:hover .icon-nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+  }
+  &:hover span.icon-2 {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.1s ease-in-out;
+  }
+}
+.w-14 {
+  width: 14px;
+}
+span.icon-2 {
+  position: absolute;
+  left: 0px;
+  font-size: 36px !important;
+  top: 1px;
+  opacity: 0;
+  visibility: hidden;
+  color: #23a1a2 !important;
+  transition: 0.1s ease-in-out;
+}
+.sub-men {
+  position: relative;
+  height: 50px;
+  display: block;
+}
+.the-sun-meu {
+  position: absolute;
+  width: 520px;
+  height: 381px;
+  background: #fff;
+  z-index: 2;
+  top: 32px;
+  padding: 26px;
+  transition: 0.3s ease-in-out;
+  border-radius: 0 0 9px 9px;
+}
+.drowp-dawn {
+  width: 225px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  color: #000000bf;
+  justify-content: space-between;
+}
+.small-menu span {
+  display: block;
+  font-size: 18px;
+  color: #00000099;
+  line-height: 40px;
+  margin: 8px 10px;
+}
+.small-menu {
+  transition: 0.4s ease-in-out;
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  // width: 220px;
+  height: auto;
+  max-height: 350px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 7px !important;
+  background-color: #f5f5f5 !important;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: #959595 !important;
+}
+.first .mat-icon {
+  padding-top: 16px;
+}
+em.right-icon {
+  position: absolute;
+  right: 20px;
+  color: #000000bf;
+  font-size: 30px;
+}
+.NewNiew .arrow-icon {
+  transform: rotate(175deg);
+  position: relative;
+  top: 21px;
+}
+.NewNiew .small-menu.menu-one {
+  left: 0;
+  right: auto;
+}
+.small-menu span:hover {
+  color: #23a1a2 !important;
+}
+.mat-button.btn-click ::ng-deep .mat-button-focus-overlay {
+  background: none;
+}
+::ng-deep button.mat-focus-indicator.mat-button.mat-button-base:hover {
+  color: #168586;
+  transform:scale(1.03);
+  transition: .3s ease-in-out;
+}
+::ng-deep  button.mat-focus-indicator.mat-button.mat-button-base {
+  font-size: 22px;
+  transition: .3s ease-in-out;
+}
+// ************** arabic
+.position-relative.NewNiew span.icon-2 {
+  left: unset;
+}

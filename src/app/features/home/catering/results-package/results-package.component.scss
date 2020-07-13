@@ -1,0 +1,67 @@
+.result-package-tittle {
+  span {
+    color: darkgrey;
+    a{
+      color: darkgrey;
+    }
+  }
+  .mat-icon {
+    position: relative;
+    top: 1px !important;
+    font-size: 18px;
+    color: darkgrey;
+    cursor: pointer;
+  }
+}
+
+
+.the-package-tittle{
+  font-size: 18px;
+  color: #404040;
+  font-weight: 500;
+  span{
+    border-bottom: 2px solid #24A2A3;
+    color: #24A2A3;
+    margin: 0 5px;
+  }
+  p{
+    font-size: 12px;
+    color: #00000080;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+}
+.icons .mat-icon {
+  cursor: pointer;
+  font-size: 18px;
+
+  &:last-child {
+    transform: rotate(90deg);
+  }
+}
+.new-active {
+  color: #168586;
+}
+
+
+
+
+
+
+// ******************************************
+ .list{
+   display: none;
+ }
+
+
+
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #23a1a2;
+  border-color: #23a1a2;
+}
+
+
+ 

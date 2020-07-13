@@ -1,0 +1,222 @@
+<div class="home-catering d-flex justify-content-between">
+    <div class="left-side-home-catering">
+        <span class="title"> <a href="#">Home</a>
+            <mat-icon>keyboard_arrow_right</mat-icon> Catering
+        </span>
+        <div class="search-type title-top">
+            <span> Search Type </span>
+            <label class="checkbox">
+                <input type="checkbox" [(ngModel)]="filters.package" (change)="filter()" class="checkbox__input" />
+                <span class="checkbox__checkmark"></span>
+                <span>Packages</span>
+                <!-- <span class="numder"> 33 </span> -->
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" [(ngModel)]="filters.offer" (change)="filter()" class="checkbox__input" />
+                <span class="checkbox__checkmark"></span>
+                <span>Offers</span>
+                <!-- <span class="numder"> 35 </span> -->
+            </label>
+        </div>
+        <!-- ******************** -->
+        <div class="Catering-Service title-top">
+            <span> Catering Service </span>
+            <mat-icon (click)="toggleClick()">keyboard_arrow_up</mat-icon>
+            <div *ngIf="!IsCheck" class="all-checked" [ngClass]="{'more': Tistype === 'Notactive'}">
+                <label class="checkbox" *ngFor="let item of foodTypes">
+                    <input type="checkbox" [ngModel]="_valueFoodTypes?.includes(item.id.toString()) ? true : false"
+                        [value]="item.id" (change)="set_food_types($event); filter()" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                    <span>{{item.name}}</span>
+                    <!-- <span class="numder"> 122 </span> -->
+                </label>
+            </div>
+            <div class="click-more mt-2">
+                <span class="ThisShow-more" (click)="Tistype = 'Notactive'"
+                    [ngClass]="{'new-active': Tistype === 'active'}">Show more</span>
+                <span class="ThisShow-more " (click)="Tistype = 'active'"
+                    [ngClass]="{'new-active': Tistype === 'Notactive'}">See less</span>
+            </div>
+        </div>
+        <!-- ******************** -->
+        <div class="Cuisine title-top">
+            <span> Cuisine Type </span>
+            <mat-icon (click)="toggleTheClick()">keyboard_arrow_up</mat-icon>
+            <div *ngIf="!IsDisplay" class="all-checked" [ngClass]="{'more' : Thistype === 'OnActive'}">
+                <label class="checkbox" *ngFor="let item of business_types">
+                    <input type="checkbox" [ngModel]="_valueBusinessTypes?.includes(item.id.toString())? true : false"
+                        [value]="item.id" (change)="set_business_types($event); filter();" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                    <span>{{item.name}}</span>
+                    <!-- <span class="numder"> 33 </span> -->
+                </label>
+            </div>
+            <div class="click-more mt-2">
+                <span class="ThisShow-more" (click)="Thistype = 'OnActive'"
+                    [ngClass]="{'new-active': Thistype === 'THEactive'}">Show more</span>
+                <span class="ThisShow-more " (click)="Thistype = 'THEactive'"
+                    [ngClass]="{'new-active': Thistype === 'OnActive'}">See less</span>
+            </div>
+        </div>
+        <div class="capacity ">
+            <!-- <em class="border-butm-2"></em> -->
+            <div class="title-top">
+                <span>Capacity</span>
+                <mat-icon (click)="toggleOpen()">expand_less</mat-icon>
+                <div *ngIf="!TheOpen">
+                    <div class="price-range" *ngIf="(options$ | async) as option">
+                        <input type="number" [(ngModel)]="initial_capacity" (change)="set_capacity()">
+                        <ng5-slider [(value)]="initial_capacity" [options]="option" (mouseup)="set_capacity()">
+                        </ng5-slider>
+                    </div>
+                </div>
+            </div>
+            <!-- ************* -->
+            <!-- <div class="Date title-top">
+                <span> Date </span>
+                <mat-icon>keyboard_arrow_up</mat-icon>
+                <div class="date-from-to d-flex justify-content-between">
+                    <div class="date-from ">
+                        <span>From</span>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <input matInput [matDatepicker]="picker1" placeholder="Date" [formControl]="date">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="date-from ">
+                        <span>To</span>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <input matInput [matDatepicker]="picker2" placeholder="Date (w/ deserialization)"
+                                [formControl]="serializedDate">
+                            <mat-datepicker-toggle matSuffix [for]="picker2">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="show-btn d-flex">
+                    <mat-icon>add</mat-icon>
+                    <span>show more</span>
+                </div>
+            </div> -->
+            <!-- ************* -->
+            <div class="title-top">
+                <span>Price</span>
+                <mat-icon (click)="thePrice()">expand_less</mat-icon>
+                <div *ngIf="!ThisPrice">
+                    <div class="price-range" *ngIf="(optionsPrice$ | async) as optionPrice">
+                        <div class="from-to d-flex justify-content-between">
+                            <p>From <input type="number" [(ngModel)]="initial_price_min_value" (change)="set_price()">
+                            </p>
+                            <p>To <input type="number" [(ngModel)]="initial_price_max_value" (change)="set_price()"></p>
+                        </div>
+                        <ng5-slider [(value)]="initial_price_min_value" [(highValue)]="initial_price_max_value"
+                            [options]="optionPrice" (mouseup)="set_price()">
+                        </ng5-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class=" right-side-home-catering" *ngIf="total">
+        <div class="top-title-detile">
+            <div *ngIf="city">
+                <div class="result" *ngIf="searchDate.search">
+                    Results of <a href="#">{{searchDate.search}}</a> in <a href="#">{{city}}</a>
+                </div>
+                <div class="result" *ngIf="!searchDate.search">
+                    Results of <a href="#">{{city}}</a>
+                </div>
+            </div>
+            <div class="the-btns">
+                <div class="result-btn selected">
+                    Cuisine Type
+                </div>
+                <div *ngFor="let item of business_types">
+                    <div class="result-btn"
+                        *ngIf="_valueBusinessTypes?.includes(item.id.toString()) || start_business == true">
+                        <a href="">{{item.name}}</a>
+                        <mat-icon>cancel
+                        </mat-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="fits-with d-flex justify-content-between">
+                <div class="fits-with-left d-flex">
+                    <span>Fits With:</span>
+                    <em style="width: 28px;"></em>
+                    <div class="fits-with-btn" *ngFor="let fits of fits_with" (click)="set_fits_with(fits.id)">
+                        <div [ngClass]="{'new-active': filters.fits_with?.includes(fits.id) || start_fits == true}">
+                            {{fits.name}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fits-with-right d-flex">
+                    <div class="price">Sort by :
+                        <span>
+                            <select style="border: 0;" (change)="filter()" [(ngModel)]="filters.sort">
+                                <option value="null">Price</option>
+                                <option value="desc">top</option>
+                                <option value="asc">bottom</option>
+                            </select>
+                        </span>
+                    </div>
+                    <span style="width: 40px;" class="fits-with-right-span"></span>
+                    <div class="icons">
+                        <mat-icon class="" (click)="type = 'vertical'" [ngClass]="{'new-active': type === 'horizenl'}">
+                            format_align_center</mat-icon>
+                        <span style="width: 20px; display: inline-block;"></span>
+                        <mat-icon class="" (click)="type = 'horizenl'" [ngClass]="{'new-active': type === 'vertical'}">
+                            format_align_center</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" Discover-more mb-4" id="newClass" [ngClass]="{'list': type === 'horizenl'}">
+            <a routerLink="/CateringServices" class="w-33 mb-3"
+                *ngFor="let service of result | paginate : {itemsPerPage: per_page, currentPage: current_page, totalItems: total}">
+                <div class="img-slider">
+                    <div class="the-img-slider d-block">
+                        <div class="slider-img">
+                            <img [src]="service.image ? service.image : 'assets/OGF9H290.png'" alt="" />
+                            <span class="icon">
+                                <mat-icon>favorite_border</mat-icon>
+                                <em class="add-list">add to wishlist</em>
+                            </span>
+                        </div>
+                        <span class="descound" *ngIf="service.offer">
+                            {{ service.offer }}
+                        </span>
+                        <div class="detil">
+                            <h6>{{ service.name }}</h6>
+                            <span>Starts from</span>
+                            <h3>{{ service.price }}</h3>
+                            <h5>
+                                <em><span class="border ">{{service.subCategory}}</span>
+                                    <mat-icon>people_outline</mat-icon>{{ service.max_num_order }}
+                                </em>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- **************************** -->
+            <!-- <a routerLink="/VenueServices" class="w-33 mb-3">
+                <app-card-services></app-card-services>
+            </a> -->
+        </div>
+        <div class="vertical-card mb-5" [ngClass]="{'list': type === 'vertical'}">
+            <div *ngFor="let service of result">
+                <app-vertical-card-services [service]="service"></app-vertical-card-services>
+            </div>
+        </div>
+
+
+        <div class="next-page d-flex justify-content-center" *ngIf="total">
+            <pagination-controls class="paginate d-flex justify-content-start" (pageChange)="getPage($event)">
+            </pagination-controls>
+        </div>
+    </div>
+</div>

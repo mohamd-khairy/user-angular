@@ -1,0 +1,45 @@
+.ngx-gallery { display: inline-block; margin-bottom: 20px; }
+ngx-gallery.ngx-gallery.the-Gallery {
+  width: 100% !important;
+  height: 100% !important;
+}
+::ng-deep ngx-gallery-image.ng-star-inserted {
+  height: 400px !important;
+  transform: scale(.9999);
+  background-size: cover;
+}
+::ng-deep  ngx-gallery-thumbnails.ng-star-inserted {
+  height: 140px !important;
+}
+::ng-deep  a.ngx-gallery-thumbnail.ngx-gallery-active.ngx-gallery-clickable.ng-star-inserted {
+  border-radius: 10px !important;
+  border: none !important;
+}
+::ng-deep  .ngx-gallery-thumbnail.ngx-gallery-active.ngx-gallery-clickable.ng-star-inserted {border: none !important;border-radius: 10px;}
+::ng-deep  .ngx-gallery-thumbnail.ngx-gallery-clickable.ng-star-inserted {
+  border: none !important;
+  border-radius: 10px !important;
+}
+::ng-deep img.ngx-gallery-preview-img.ngx-gallery-center.animation.ng-star-inserted.ngx-gallery-active {
+  // width: 950px !important;
+  // height: 500px !important;
+  transform: scale(0.9) !important;
+}
+::ng-deep .ngx-gallery-image.ngx-gallery-active.ngx-gallery-clickable.ng-star-inserted {
+  border-radius: 20px !important;
+}
+::ng-deep .ngx-gallery-icon .ngx-gallery-icon-content{
+  font-size: 50px !important;
+}
+::ng-deep .ngx-gallery-thumbnail.ngx-gallery-clickable {
+  border-radius: 10px !important;
+  border: none !important;
+}
+::ng-deep .ngx-gallery-image.ngx-gallery-active.ngx-gallery-clickable {
+  border-radius: 10px !important;
+}
+::ng-deep .ngx-gallery-bullet {
+  width: 25px !important;
+  height: 8px !important;
+  border-radius: 5px !important;
+}

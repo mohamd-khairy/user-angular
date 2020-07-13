@@ -1,0 +1,26 @@
+<div class="package-tittle d-flex justify-content-between">
+  <span>Date</span>
+  <mat-icon (click)="toggledisplyed()">keyboard_arrow_up</mat-icon>
+</div>
+<div class="the-date" *ngIf="!isAllowed">
+  <mat-form-field class="example-full-width" appearance="fill" >
+    <mat-label> Date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker">
+      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
+<em class="border-butm-2"></em>
+<div class="package-tittle d-flex justify-content-between mt-2">
+  <span>Price</span>
+  <mat-icon (click)="thisdisplyed()" >keyboard_arrow_up</mat-icon>
+</div>
+<div class="price-range Price" *ngIf="!isdisplyed">
+  <div class="from-to d-flex justify-content-between">
+    <p>From <input type="number" [(ngModel)]="minValue"></p>
+    <p>To <input type="number" [(ngModel)]="maxValue"></p> 
+  </div>
+  <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>  
+</div>

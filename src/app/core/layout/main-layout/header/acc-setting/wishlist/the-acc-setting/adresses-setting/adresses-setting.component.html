@@ -1,0 +1,107 @@
+<div class="address-form mt-4 d-flex">
+  <div class="left-side-address">
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Country</label>
+        <select class="form-control" id="exampleFormControlSelect1" >
+          <option>- Choose your country -</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">City</label>
+        <select class="form-control" id="exampleFormControlSelect1" >
+          <option>- Choose from cities -</option>
+          <option>cairo</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+          <option>egypt</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Street Name/Number</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="e.g. 67 Ibn Sina Street">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Block Number</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="e.g. 123">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Flat Number</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="e.g. 1">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Adress Labl</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="e.g. Work">
+      </div>
+    </form>
+    <div class="save-edite d-flex mt-4">
+      <div class="save-edite-changes active" (click)="type = 'opened'" [ngClass]="{'active': type === 'opened'}">
+        Save
+      </div>
+      <span style="width: 20px;"></span>
+      <div class="save-edite-changes " (click)="type = 'closed'" [ngClass]="{'active': type === 'closed'}">
+        Cancel
+      </div>
+    </div>
+  </div>
+  <span style="width: 200px; display: inline-block;"></span>
+  <div class="right-side-address ">
+    <div class="security d-flex justify-content-between">
+      <span>Address label <em>Home</em></span>
+      <span>
+        <label class="checkbox" >
+          <input type="checkbox" checked class="checkbox__input" />
+          <span class="checkbox__checkmark " ></span>
+          <span class="the-span">Make as default</span>
+        </label>
+      </span>
+    </div>
+    <p>
+      Mohamed Harfoush El Mharfash 
+      21551-8226 New Samir mouth Gust Place Finland KP New Hampshire 90004 Port 
+      view c Apt. 769 Apt. 551 Liechtenstein Haiti CI
+    </p>
+    <div class="save-edite d-flex mt-4 mb-4">
+      <div class="save-edite-changes active" (click)="Newtype = 'thisactive'" [ngClass]="{'active': Newtype === 'thisactive'}">
+        Edit
+      </div>
+      <span style="width: 10px;"></span>
+      <div class="save-edite-changes " (click)="Newtype = 'TisiNotactive'" [ngClass]="{'active': Newtype === 'TisiNotactive'}">
+        Delete
+      </div>
+    </div>
+    <!-- *************** -->
+    <div class="security d-flex justify-content-between">
+      <span>Address label <em>Work</em></span>
+      <span>
+        <label class="checkbox" >
+          <input type="checkbox"  class="checkbox__input" />
+          <span class="checkbox__checkmark " ></span>
+          <span class="the-span">Make as default</span>
+        </label>
+      </span>
+    </div>
+    <p>
+      Mohamed Harfoush El Mharfash 
+      21551-8226 New Samir mouth Gust Place Finland KP New Hampshire 90004 Port 
+      view c Apt. 769 Apt. 551 Liechtenstein Haiti CI
+    </p>
+    <div class="save-edite d-flex mt-4 mb-4">
+      <div class="save-edite-changes active" (click)="thistype = 'Onactive'" [ngClass]="{'active': thistype === 'Onactive'}">
+        Edit
+      </div>
+      <span style="width: 10px;"></span>
+      <div class="save-edite-changes " (click)="thistype = 'Notactive'" [ngClass]="{'active': thistype === 'Notactive'}">
+        Delete
+      </div>
+    </div>
+  </div>
+</div>

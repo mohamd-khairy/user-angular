@@ -1,0 +1,9 @@
+<div class="head">
+  <h3>Discover by cities</h3>
+  <div class="city row">
+    <div class="city-img col-3" *ngFor="let city of cities$ | async">
+      <img [src]="city.image" alt="" />
+      <span>{{ city.name }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,147 @@
+.package-tittle{
+  margin-top: 5px;
+  span{
+    font-size: 18px;
+    margin: 10px 0px;
+    color: #404040;
+    font-weight: 500;
+  }
+  .mat-icon{
+    cursor: pointer;
+  }
+}
+.border-butm-2 {
+  display: block;
+  padding-top: 20px;
+  border-bottom: 1px solid #afafaf42;
+}
+// *************************
+.price-range input {
+  width: 150px;
+  height: 39px;
+  padding: 5px 20px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #00000033;
+  font-size: 16px;
+  color: #24A2A3;
+  font-weight: 500;
+}
+:host ::ng-deep .ng5-slider .ng5-slider-pointer {
+  transform: scale(.5);
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  background: #23a1a2;
+}
+:host ::ng-deep .ng5-slider .ng5-slider-selection{
+  background: #23a1a2;
+}
+:host ::ng-deep .ng5-slider .ng5-slider-pointer:after {
+  display: none;
+}
+.venue-type{
+ position: relative;
+ .mat-icon {
+  position: absolute ;
+  right: 0 ;
+  margin-top: 7px;
+  cursor: pointer;
+
+  }
+}
+// ******************************
+:host ::ng-deep .mat-form-field-wrapper{
+  padding: 0 10px !important;
+  width: 95% !important;
+  border: 1px solid #23a1a2;
+  border-radius: 5px;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+  background: none !important;
+  padding: 0 !important;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline::before{
+  display: none !important;
+}
+:host ::ng-deep .mat-form-field-appearance-fill:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{
+  display: none !important;
+}
+:host ::ng-deep  .mat-form-field-infix{
+  position: relative;
+  bottom: -3px !important;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-ripple{
+  height: 0 !important;
+}
+:host ::ng-deep button:focus{
+  outline:none !important;
+}
+:host ::ng-deep mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
+  position: relative;
+  top: 3px;
+}
+:host ::ng-deep .mat-form-field{
+  width: 100% !important;
+}
+// ******************************
+// ***************************************medi-screen*********************************************
+@media only screen and (max-width:1680px){
+  .from-to p{
+    margin: 0 5px;
+    width: 120px;
+  }
+  .price-range input{
+    width: 135px;
+  }
+ }
+ // // *************************** end-width ************************************
+ @media only screen and (max-width: 1600px) and (min-width: 1536px) {
+  .price-range input{
+    width: 130px;
+  }
+ }
+ // // *************************** end-width ************************************
+ @media only screen and (max-width: 1536px) and (min-width: 1441px){
+  .price-range input{
+    width: 125px;
+  }
+  .this-Packages-img{
+    height: 240px;
+  }
+ }
+ // // *************************** end-width ************************************
+ @media only screen and (max-width: 1440px) and (min-width: 1370px){
+  .price-range input{
+    width: 120px;
+  }
+  .this-Packages-img{
+    height: 240px;
+  }
+ }
+ // // *************************** end-width ************************************
+ @media only screen and (max-width: 1366px) and (min-width: 1280px){
+  :host ::ng-deep .mat-form-field-wrapper{
+    width: 93% !important;
+  }
+  .price-range input{
+    width: 120px;
+  }
+  .this-Packages-img{
+    height: 230px;
+  }
+ }
+ // *************************** end-width ****************************
+ @media only screen and (max-width: 1280px) and (min-width: 1200px){
+  :host ::ng-deep .mat-form-field-wrapper{
+    width: 90% !important;
+  }
+  .price-range input{
+    width: 120px;
+  }
+  .this-Packages-img{
+    height: 230px;
+  }
+ }
+ 
+ 

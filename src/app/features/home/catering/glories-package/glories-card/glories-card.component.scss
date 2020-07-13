@@ -1,0 +1,88 @@
+.Glories-Wedding>span {
+  color: #404040;
+  font-size: 27px;
+  margin-bottom: 22px;
+  display: block;
+  font-weight: 500;
+}
+.the-place>em {
+  color: #000000;
+  font-size: 18px;
+}
+.the-place>span {
+  color: #3590EB;
+  margin: 0 10px;
+  font-size: 18px;
+}
+.the-place {
+  margin-bottom: 25px;
+}
+.place>p {
+  font-size: 12px;
+  color: #7F7F7F;
+  line-height: 20px;
+}
+.Reservation-Date>span {
+  color: #404040;
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+}
+.the-count {
+  margin: 20px 0;
+  em{
+    font-size: 12px;
+    margin: 0 20px;
+    color: #0000004D;
+  }
+  span{
+    font-size: 20px;
+    color: #24A2A3;
+    font-weight: 600;
+  }
+}
+:host ::ng-deep .btn-recerve button.mat-raised-button.mat-button-base.mat-primary {
+  background: #23A1A2;
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+}
+.card-img {
+  height: 450px;
+}
+// ******************************
+:host ::ng-deep mat-form-field.example-full-width.mat-form-field {
+  width: 100%;
+}
+:host ::ng-deep .mat-form-field-wrapper{
+  padding: 0 10px !important;
+  width: 100% !important;
+  border: 1px solid #23a1a2;
+  border-radius: 5px;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+  background: none !important;
+  padding: 0 !important;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline::before{
+  display: none !important;
+}
+:host ::ng-deep .mat-form-field-appearance-fill:not(.mat-form-field-disabled) .mat-form-field-flex:hover~.mat-form-field-underline .mat-form-field-ripple{
+  display: none !important;
+}
+:host ::ng-deep  .mat-form-field-infix{
+  position: relative;
+  bottom: -3px !important;
+}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-ripple{
+  height: 0 !important;
+}
+:host ::ng-deep button:focus{
+  outline:none !important;
+}
+:host ::ng-deep mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
+  position: relative;
+  top: 3px;
+}
+// ******************************

@@ -1,0 +1,38 @@
+<li class="position-relative" [ngClass]="{ NewNiew: lang == 'ar' }" [dir]="dir">
+  <span class="tow-icon">
+    <div class="dropdown">
+      <a (click)="toggleMenu()">
+        
+        <mat-icon class="icon-nav">menu</mat-icon>
+        <span class="icon-2"> <mat-icon>close</mat-icon> </span>
+        Browse Categories
+      </a>
+      <div
+        class="the-sun-meu"
+        aria-labelledby="dropdownMenuLink"
+        *ngIf="showMenu"
+      >
+        <div class="sub-men">
+          <div class="drowp-dawn first" *ngFor="let category of categories" (click)="selectCategory(category)">
+            <button
+              mat-button
+              
+              class="btn-click"
+            >
+              {{ category }}
+            </button>
+            <mat-icon class="arrow-icon">keyboard_arrow_right</mat-icon>
+          </div>
+          
+          <div class="small-menu menu-one d-block">
+            <span *ngFor="let subCategory of subCategories">{{
+              subCategory.name
+            }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <em class="w-14"></em>
+ 
+</li>

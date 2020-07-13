@@ -1,0 +1,17 @@
+.the-map {
+  margin-top: 40px;
+  width: 80%;
+  span{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+  }
+}
+span.border-butm-2 {
+  display: block;
+  padding-top: 40px;
+  border-bottom: 1px solid #b8b8b8;
+}
+.agm-map {
+  height: 300px;
+}

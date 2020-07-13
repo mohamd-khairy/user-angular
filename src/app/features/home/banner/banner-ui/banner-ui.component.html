@@ -1,0 +1,11 @@
+<div class="banner ">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let banner of banners$ | async">
+      <div class="img-slider">
+        <a href="#" class="the-img-slider d-flex justify-content-between">
+          <img [src]="banner.image" alt="" />
+        </a>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>

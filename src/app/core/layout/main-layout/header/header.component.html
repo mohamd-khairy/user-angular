@@ -1,0 +1,106 @@
+<div class="header px-140" [class.header-changed]="change_header">
+  <div class="logo-img">
+    <a href="#"> <img src="assets/Group 825.svg" alt="" /></a>
+  </div>
+
+  <div class="w-110"></div>
+  <app-search-home [state]="state$ | async" [autoComplete$]="autoComplete$" (searching)="onSearch($event)">
+  </app-search-home>
+  <span class="the-opt-img"></span>
+  <div class="d-flex justify-content-end flex-grow-1 align-items-center h-100">
+    <div class="opt-img">
+      <div class="dropdown">
+        <a class="dropdown-toggle drop-img" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" [routerLink]="['/wishlist']">
+          <!-- <mat-icon> room_service </mat-icon>
+          <span>Reservations</span> -->
+          <div class="social-img reservation-img">
+            <img src="assets/reservation.png" alt="">
+            <!-- <img src="assets/reservation.png" alt=""> -->
+          </div>
+        </a>
+        <!-- <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink">
+          <div class="sub-men-option d-flex justify-content-between">
+            <div class="detils">
+              <span>Royal Majestic Hall</span>
+              <em>289,000 EGP</em>
+            </div>
+            <div class="detils-img">
+              <img src="assets/component (10).png" alt="" />
+            </div>
+          </div>
+          <div class="sub-men-option d-flex justify-content-between">
+            <div class="detils">
+              <span>Royal Majestic Hall</span>
+              <em>289,000 EGP</em>
+            </div>
+            <div class="detils-img">
+              <img src="assets/component (10).png" alt="" />
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-primary">
+            Check out
+          </button>
+        </div> -->
+      </div>
+    </div>
+    <span class="w-42"></span>
+    <div class="opt-img">
+      <div class="dropdown">
+        <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" [routerLink]="['/wishlist']">
+          <!-- <mat-icon>favorite_border</mat-icon>
+          <span>Wishlist</span> -->
+          <div class="social-img">
+            <img src="assets/wishlist.png" alt="">
+            <!-- <img src="assets/wishlist.png" alt=""> -->
+          </div>
+        </a>
+        <!-- <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink">
+          <div class="sub-men-option d-flex justify-content-between">
+            <div class="detils">
+              <span>Royal Majestic Hall</span>
+              <em>289,000 EGP</em>
+            </div>
+            <div class="detils-img">
+              <img src="assets/component (10).png" alt="" />
+            </div>
+          </div>
+          <div class="sub-men-option d-flex justify-content-between">
+            <div class="detils">
+              <span>Royal Majestic Hall</span>
+              <em>289,000 EGP</em>
+            </div>
+            <div class="detils-img">
+              <img src="assets/component (10).png" alt="" />
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-primary">
+            Check out
+          </button>
+        </div> -->
+      </div>
+    </div>
+    <span class="w-42"></span>
+    <a routerLink="Wishlist" >
+      <div class="opt-img">
+        <!-- <mat-icon>person_outline</mat-icon>
+        <span>Sign in</span> -->
+        <div class="social-img">
+          <button type="button" class="btn-sign" (click)="headerService.active=false" data-toggle="modal" data-target="#exampleModalCenter">
+            <img src="assets/signIn.png" alt="">
+          </button>
+        </div>
+        <!-- ******************************* -->
+        <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+             <div class="modal-content p-5">
+              <app-create-account></app-create-account>
+            </div> 
+          </div>
+        </div>
+        <!-- ******************************* -->
+      </div>
+    </a>
+  </div>
+</div>

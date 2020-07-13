@@ -1,0 +1,141 @@
+.Addons-option {
+  height: 170px;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+}
+.Addons-option.more{
+  height: 400px;
+  transition: .3s ease-in-out;
+  }
+.Addons-Included 
+{
+  border-radius: 10px;
+  >span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #404040;
+  }
+  div>span{
+    font-size: 13px;
+    color: #000000BF;
+    font-weight: 500;
+    cursor: pointer;
+    .mat-icon{
+      color: #24a2a3;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  div> :last-child{
+    color: #000000BF;
+    font-weight: 700;
+   }
+}
+.click-more >span{
+  color: #24A2A3 !important;
+  font-size: 12px;
+  display: block;
+  font-weight: 500 !important;
+  cursor: pointer;
+  display: none;
+}
+.new-active{
+  display: block !important;
+}
+.Your-Reservations
+{
+  border-radius: 10px;
+  >span{
+    font-size: 16px;
+      font-weight: 500;
+      color: #404040;
+  }
+}
+.right-Addons-type span {color: #000000BF;margin: 0 10px;font-size: 18px;font-weight: 500;}
+.right-Addons-type .mat-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 6px;
+  cursor: context-menu;
+  transition: .2s ease-in-out;
+}
+.right-Addons-type .mat-icon:hover{
+  color: #24A2A3;
+  transition: .2s ease-in-out;
+}
+.right-Addons-type em {
+  margin: 0 10px;
+  font-weight: 600;
+}
+.left-Addons-type span {
+  color: #00000080;
+  cursor: context-menu;
+}
+.date-count span {
+  font-size: 14px;
+  color: #00000080;
+}
+.date-count em {
+  color: #000000BF;
+  font-weight: 600;
+}
+.remove> span{
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+.modal-header {
+  border: 1px solid #ababab;
+  padding: 20px 50px;
+  position: absolute;
+  border-radius: 5px;
+  top: 300px;
+  display: block;
+  background: #fff;
+  // display: none;
+}
+.modal-header >span >em {
+  width: 119px;
+  display: inline-block;
+  background: #0000001A;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-dialog .modal-content {
+  border: 0px !important;
+}
+.modal-header span {
+  font-size: 16px !important;
+  display: block;
+  color: #000000 !important;
+  margin: 10px 0;
+}
+em.ok {
+  background: #D01D1D !important;
+  color: #fff;
+}
+.total-count{
+  border-top: 1px solid #c7c7c78c;
+  span{
+    font-size: 14px;
+    color: #000;
+  }
+  em{
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.Reserve-btn {
+  text-align: center;
+  border: 1px solid #23A1A2;
+  padding: 12px;
+  background: #23A1A2;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}

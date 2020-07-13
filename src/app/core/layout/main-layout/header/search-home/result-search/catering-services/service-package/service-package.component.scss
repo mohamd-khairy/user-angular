@@ -1,0 +1,204 @@
+.package-home{
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  span{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+  }
+}
+.package-home-img {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.package-home-service {
+  position: relative;
+  width: 32%;
+  margin: 0 10px;
+}
+span.Royal-Wedding-Packages {
+  margin-top: 20px;
+  color: #000000;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  font-family: lato;
+}
+em.Contains {
+  margin-top: 20px;
+  display: block;
+  color: #00000080;
+  font-size: 12px;
+}
+.package-home-service p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  line-height: 33px;
+}
+em.old-offer {
+  display: inline-block;
+  width: 80px;
+  color: #0000004D;
+  position: relative;
+}
+.the-old:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 70%;
+  height: 1px;
+  background: #BFBFBF;
+
+}
+em.new-offer {
+  font-size: 20px;
+  font-weight: 600;
+}
+.more-service {
+  font-size: 15px;
+  font-weight: 500;
+}
+.more-service .mat-icon {
+  font-size: 20px;
+  margin: 0 12px;
+}
+.border-butm-2 {
+  margin: 40px 0;
+  border-bottom: 1px solid #b8b8b8;
+}
+// ***************************************
+.detil h5 span {
+  display: block !important;
+  width: 80px;
+  margin-bottom: 20px !important;
+}
+.slider-img {
+  position: relative;
+  margin: 0 8px;
+
+  .icon {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 38px;
+    height: 38px;
+    margin: 10px;
+    color: #23a1a2;
+    direction: initial;
+  }
+}
+.the-img-slider h6 {
+  font-size: 22px;
+  margin: 14px;
+  color: #000000;
+}
+.the-img-slider span {
+  margin: 17px;
+  font-size: 16px;
+  color: #00000080;
+}
+.the-img-slider h3 {
+  margin: 11px;
+  font-size: 22px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.the-img-slider h5 {
+  margin: 17px;
+  font-size: 16px;
+  margin-top: 0;
+  color: #8686866b;
+}
+.img-slider {
+  cursor: pointer;
+  position: relative;
+  width: 25%;
+
+}
+.img-slider h5 em {
+  margin: 0 15px;
+  font-style: normal;
+}
+.Venues-Explore-option {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin: 10px;
+  font-size: 25px !important;
+  color: #23a1a2;
+  z-index: 1;
+  &:hover em.add-list {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+    transform: translateX(-4px);
+    z-index: -1;
+    width: 150px;
+    color: #fff;
+  }
+  &:hover .material-icons {
+    color: #fff !important;
+  }
+}
+.icon:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 6px;
+  background: #ffffffb3;
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  z-index: -1;
+}
+em.add-list {
+  position: absolute;
+  font-size: 14px;
+  width: 100px;
+  right: 0;
+  top: 0;
+  padding: 0 20px;
+  height: 27px;
+  line-height: 25px;
+  border-radius: 19px;
+  transition: 0.3s ease-in-out;
+  transform: translateX(-3px);
+  opacity: 0;
+  visibility: hidden;
+}
+em.add-list:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -1px;
+  width: 100%;
+  background: #23a1a2;
+  height: 40px;
+  z-index: -1;
+  border-radius: 19px;
+}
+span.descound {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 107px;
+  height: 36px;
+  background: #f48271;
+  margin: 0 !important;
+  line-height: 38px;
+  border-radius: 4px;
+  color: #fff !important;
+  font-size: 16px !important;
+  align-items: center;
+  padding: 0 17px;
+}

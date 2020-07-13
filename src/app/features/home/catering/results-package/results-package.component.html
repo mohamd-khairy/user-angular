@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="result-package">
+    <div class="result-package-tittle d-flex mb-3">
+     <span><a href="#">Home</a></span><mat-icon>keyboard_arrow_right</mat-icon> <span>Packages</span>
+    </div>
+    <div class="result-package-home d-flex">
+      <div class="left-result-package col-3">
+        <app-the-filter></app-the-filter>
+      </div>
+      <!-- ************** finish-left-side******************* -->
+      <div class="right-result-package col-9 ">
+        <div class="the-package-tittle">
+          Results of <span> Package</span> , <span> Today</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis.
+             Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada.
+             Ac odio tempor orci dapibus ultrices in.
+          </p>
+        </div>
+        <!-- ***********************end-tittle -->
+        <div class="wedding-right-side d-flex justify-content-end mb-3">
+          <div class="price">Sort by : 
+            <span>   
+              <select style="border: 0;">
+              <option value="0">Price</option>
+              <option value="1">top</option>
+              <option value="1">bottom</option>
+              </select> 
+            </span>
+          </div>
+          <span style="width: 40px;"></span>
+           <div class="icons">
+            <mat-icon  class="" (click)="type = 'vertical'" [ngClass]="{'new-active': type === 'horizenl'}">format_align_center</mat-icon>
+            <span style="width: 20px; display: inline-block;"></span>
+            <mat-icon  class="" (click)="type = 'horizenl'" [ngClass]="{'new-active': type === 'vertical'}">format_align_center</mat-icon>
+           </div>
+        </div>
+        <div class=" Discover-more " [ngClass]="{'list': type === 'horizenl'}">
+        
+          <app-results-package-content></app-results-package-content>
+          <!-- ************************* -->
+          <app-results-package-content></app-results-package-content>
+          <!-- ************************* -->
+          <app-results-package-content></app-results-package-content>
+          <!-- ************************* -->
+          <app-results-package-content></app-results-package-content>
+          <!-- ************************* -->
+          <app-results-package-content></app-results-package-content>
+          <!-- ************************* -->
+          
+       </div>
+       <!-- ************************vertical****************** -->
+       <div class=" this-Discover-more " [ngClass]="{'list': type === 'vertical'}">
+        
+          <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+          </div>
+          <!-- ********************** -->
+          <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+           <div class="left-side-Royal-Packages  d-flex w-100 mt-4">
+            <app-results-package-vertical></app-results-package-vertical>
+           </div>
+           <!-- ********************** -->
+       </div>
+       <!-- ********************************* -->
+       <nav aria-label="Page navigation example ">
+        <ul class="pagination justify-content-center mt-5">
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </div>
+</div>

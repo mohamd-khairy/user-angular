@@ -1,0 +1,57 @@
+<div class="container d-flex mb-5" *ngIf="events" [ngClass]="{ NewNiew: lang == 'ar' }" [dir]="dir">
+  <a routerLink="/Wedding">
+    <div class="images one">
+      <span class="svg-img">
+        <img [src]="
+       leftBanner.image
+         ? leftBanner.image
+         : 'src/assets/Path 5981.svg'" alt="" />
+      </span>
+      <span class="btn-img d-flex justify-content-center">
+        Discover more
+      </span>
+      <h4 class="fisrt-child">{{ leftBanner.name }}</h4>
+    </div>
+  </a>
+  <span class="w-16"></span>
+  <div class="images two">
+    <span class="svg-img">
+      <img [src]="
+      middleBanner.image
+         ? middleBanner.image
+         : '../../../../assets/Path 5777.svg'" alt="" />
+    </span>
+    <span class="btn-img d-flex justify-content-center">
+      Discover more
+    </span>
+    <h4>{{ middleBanner.name }}</h4>
+  </div>
+  <span class="w-16"></span>
+  <div class="images three">
+    <div class="top-img the-img">
+      <span class="svg-img">
+        <img [src]="
+        upperRight.image
+           ? upperRight.image
+           : 'src/assets/Path 5982.svg'" alt="" />
+      </span>
+      <span class="btn-img d-flex justify-content-center">
+        Discover more
+      </span>
+      <h4>{{ upperRight.name }}</h4>
+    </div>
+    <div class="botm-img the-img">
+      <span class="svg-img">
+        <img [src]="
+        bottomRight.image
+           ? bottomRight.image
+           : 'src/assets/Path 5983.svg'" alt="" />
+      </span>
+      <span class="btn-img d-flex justify-content-center">
+        Discover more
+      </span>
+      <h4>{{ bottomRight.name }}</h4>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,48 @@
+<div class="glories-card row">
+  <div class="left-card col-8">
+    <div class="card-img">
+      <img src="assets/OGF9H92.png" alt="">
+    </div>
+  </div>
+  <div class="right-card col-4">
+    <div class="Glories-Wedding">
+      <span>Glories Wedding Package</span>
+      <div class="place ">
+        <div class="the-place">
+          <em>by</em>
+          <span>San Stefano Hotel</span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. 
+          Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. 
+          Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla.
+          Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus.
+          Fusce id velit ut tortor pretium. Massa ultricies mi quis hendrerit dolor magna eget.
+          Nullam eget felis eget nunc lobortis. Faucibus ornare suspendisse sed nisi.
+        </p>
+      </div>
+      <div class="Reservation-Date">
+        <span>Reservation Date</span>
+        <div class="this-date">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker">
+              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="the-count">
+        <span>122,000EGP</span>
+        <em>(All prices Inclusive of VAT)</em>
+      </div>
+      <div class="btn-recerve">
+        <button mat-raised-button color="primary">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+<div class="search-box" [ngClass]="{'NewSearch': lang == 'ar'}" [dir]="dir">
+  <form class="searching d-flex h-100" *ngIf="state" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" class="search-Thename">
+      <mat-select formControlName="category">
+        <mat-option *ngFor="let category of state.categories" [value]="category.id" class="opt-mat">
+          {{ category.name }}
+        </mat-option>
+      </mat-select>
+      <mat-icon class="arrow-icon">keyboard_arrow_down</mat-icon>
+    </mat-form-field>
+    <span class="w-between"></span>
+    <mat-form-field appearance="outline" class="search-Thename">
+      <mat-select formControlName="city">
+        <mat-option *ngFor="let city of state.cities" [value]="city.key">
+          {{ city.name }}
+        </mat-option>
+      </mat-select>
+      <mat-icon class="arrow-icon">keyboard_arrow_down</mat-icon>
+    </mat-form-field>
+    <span class="w-between"></span>
+    <div class="position-relative ">
+      <input type="search" placeholder="what are you looking for?" class="serch" formControlName="search" />
+      <!-- <ng-container *ngIf="autoComplete$ | async as autoComplete"> -->
+      <div class="autoComplete" *ngIf="showList && state.autoComplete && state.autoComplete.length >= 1">
+        <button mat-button *ngFor="let result of state.autoComplete" class="d-block" type="button"
+          (click)="go_to_service(result.service_id)">
+          {{ result.name }}
+        </button>
+      </div>
+      <!-- </ng-container> -->
+    </div>
+    <div class="serc-btn">
+      <div class="serch-img">
+        <button mat-button type="submit" class="The-search-btn"><img src="assets/Icon feather-search .svg"
+            alt="" /></button>
+      </div>
+    </div>
+  </form>
+  <!-- <div class="d-flex detiles" *ngIf="state$ | async as state">
+      <div class="search-name">
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {{ state.categories[0].name }}
+            <mat-icon>keyboard_arrow_down</mat-icon>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button
+              *ngFor="let category of state.categories"
+              class="dropdown-item"
+              type="button"
+            >
+              {{ category.name }}
+            </button>
+          </div>
+        </div>
+      </div>
+      <span class="the-line-between"></span>
+      <div class="search-name">
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {{ state.cities[0].name }} <mat-icon>keyboard_arrow_down</mat-icon>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a
+              *ngFor="let city of state.cities"
+              class="dropdown-item"
+              href="#"
+              >{{ city.name }}</a
+            >
+          </div>
+        </div>
+      </div>
+      <span class="the-line-between"></span>
+    </div>
+    <div class="position-relative w-100">
+      <input
+        type="search"
+        placeholder="what are you looking for?"
+        class="serch"
+        #search
+      />
+      <ng-container *ngIf="autoComplete$ | async as autoComplete">
+        <div class="autoComplete" *ngIf="showList">
+          <a *ngFor="let result of autoComplete" class="d-block">{{
+            result.name
+          }}</a>
+        </div>
+      </ng-container>
+    </div> -->
+</div>

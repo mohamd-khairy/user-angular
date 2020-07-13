@@ -1,0 +1,27 @@
+.home-catering {
+  position: relative;
+  width: 100%;
+  padding: 0 200px;
+  border-top: 1px solid #dadada !important;
+  padding-top: 20px !important;
+}
+span.title {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #404040;
+}
+.the-content:after {
+  content: "";
+  position: absolute;
+  clear: both;
+}
+.the-content {
+  display: inline-block;
+  width: 100%;
+}
+span.title .mat-icon {
+  font-size: 18px;
+  padding-top: 2px;
+}

@@ -1,0 +1,38 @@
+<div class="head">
+  <h2> Discover more</h2>
+  <div class=" Discover-more slider">
+    <!-- <app-card-services class="wA-20"></app-card-services> -->
+    <div class="img-slider wA-20" *ngFor="let service of (services$ | async)">
+      <div class="the-img-slider d-block">
+        <div class="slider-img">
+          <img [src]="
+              service.image
+                ? service.image
+                : 'assets/component (9).png'
+            " alt="" />
+          <span class="icon">
+            <mat-icon>favorite_border</mat-icon>
+            <em class="add-list">add to wishlist</em>
+          </span>
+        </div>
+        <span class="descound" *ngIf="service.offer">
+          {{ service.offer }}
+        </span>
+        <div class="detil">
+          <h6>{{ service.service_name }}</h6>
+          <span>Starts from</span>
+          <h3>{{ service.min_price }}</h3>
+          <h5>
+            {{ service.neighborhood_name }}
+            <em>
+              <mat-icon>people_outline</mat-icon>{{ service.max_capacity }}
+            </em>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="show-more">
+    Show More <i class="fa fa-chevron-right"></i>
+  </div>
+</div>

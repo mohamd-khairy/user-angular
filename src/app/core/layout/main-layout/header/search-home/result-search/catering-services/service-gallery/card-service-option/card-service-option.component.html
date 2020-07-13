@@ -1,0 +1,130 @@
+<div class="the-card ">
+  <div class="Addons-Included  border p-3">
+     <span>Addons Included</span>
+     <div class="Addons-option mt-3" [ngClass]="{'more': Tistype === 'Notactive'}">
+       <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+         <span>Open buffet</span>
+         <span class="d-flex align-items-center">
+          10,000EGP <em style="width: 15px;display: inline-block;"></em>
+          <mat-icon>add_circle</mat-icon>
+         </span>
+       </div>
+       <!-- ************** -->
+       <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+        <span>Open buffet</span>
+        <span class="d-flex align-items-center">
+         10,000EGP <em style="width: 15px;display: inline-block;"></em>
+         <mat-icon>add_circle</mat-icon>
+        </span>
+      </div>
+      <!-- ************** -->
+      <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+        <span>Open buffet</span>
+        <span class="d-flex align-items-center">
+         10,000EGP <em style="width: 15px;display: inline-block;"></em>
+         <mat-icon>add_circle</mat-icon>
+        </span>
+      </div>
+      <!-- ************** -->
+      <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+        <span>Open buffet</span>
+        <span class="d-flex align-items-center">
+         10,000EGP <em style="width: 15px;display: inline-block;"></em>
+         <mat-icon>add_circle</mat-icon>
+        </span>
+      </div>
+      <!-- ************** -->
+      <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+        <span>Open buffet</span>
+        <span class="d-flex align-items-center">
+         10,000EGP <em style="width: 15px;display: inline-block;"></em>
+         <mat-icon>add_circle</mat-icon>
+        </span>
+      </div>
+      <!-- ************** -->
+      <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+        <span>Open buffet</span>
+        <span class="d-flex align-items-center">
+         10,000EGP <em style="width: 15px;display: inline-block;"></em>
+         <mat-icon>add_circle</mat-icon>
+        </span>
+      </div>
+      <!-- ************** -->
+      <div class="d-flex justify-content-between mt-3" style="border-bottom: 1px solid #ababab4f;padding-bottom: 15px;">
+        <span>Open buffet</span>
+        <span class="d-flex align-items-center">
+         10,000EGP <em style="width: 15px;display: inline-block;"></em>
+         <mat-icon>add_circle</mat-icon>
+        </span>
+      </div>
+      <!-- ************** -->
+     </div>
+     <div class="click-more mt-4">
+      <span (click)="Tistype = 'Notactive'" [ngClass]="{'new-active': Tistype === 'active'}">+4 Addons</span>
+       <span (click)="Tistype = 'active'" [ngClass]="{'new-active': Tistype === 'Notactive'}">See less</span> 
+     </div>
+  </div>
+  <!-- ****************** -->
+  <div class="Your-Reservations  border p-3 mt-4">
+    <span>Addons Included</span>
+    <div class="date-count d-flex justify-content-between mt-4">
+      <span>Sun, 20 May 2020</span>
+      <em>22,000EGP</em>
+    </div>
+    <div class="Addons-type-include d-flex justify-content-between mt-3">
+      <div class="left-Addons-type">
+        <span>Open Buffet</span>
+      </div>
+      <div class="right-Addons-type d-flex align-items-center">
+        <span>1,000EGP</span> <mat-icon>remove_circle</mat-icon> <em>2</em><mat-icon>add_circle</mat-icon>
+      </div>
+    </div>
+    <div class="remove position-relative">
+      <span type="button"  (click)="openModal(template)">Remove</span>
+       <div class="remove-cancel"> 
+         <!-- **************** --> 
+         <ng-template #template>
+          <div class="modal-header">
+            <span>Are you sure you wanna delete the Item?</span>
+            <span>
+              <em>cancel</em>
+              <em class="ok">Delete</em>
+            </span>
+          </div>
+        </ng-template> 
+       </div>
+    <!-- *********************** -->
+    <div class="Addons-type-include d-flex justify-content-between mt-3">
+      <div class="left-Addons-type">
+        <span>Hall Screens</span>
+      </div>
+      <div class="right-Addons-type d-flex align-items-center">
+        <span>1,000EGP</span> <mat-icon>remove_circle</mat-icon> <em>3</em><mat-icon>add_circle</mat-icon>
+      </div>
+    </div>
+    <div class="remove position-relative ">
+      <span type="button"  (click)="openModal(template)">Remove</span>
+       <div class="remove-cancel"> 
+         <!-- **************** --> 
+         <ng-template #template>
+          <div class="modal-header">
+            <span>Are you sure you wanna delete the Item?</span>
+            <span>
+              <em>cancel</em>
+              <em class="ok">Delete</em>
+            </span>
+          </div>
+        </ng-template> 
+       </div>
+    </div>
+    <!-- ****************** -->
+    <div class="total-count d-flex justify-content-between pt-3 mt-3">
+      <span>Total</span>
+      <em>24,000EGP</em>
+    </div>
+  </div>
+</div>
+<div class="Reserve-btn mt-4">
+  <span>Reserve</span>
+</div>
+</div>

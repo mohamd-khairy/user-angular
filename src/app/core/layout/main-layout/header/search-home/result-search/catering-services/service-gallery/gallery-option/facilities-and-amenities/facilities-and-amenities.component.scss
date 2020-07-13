@@ -1,0 +1,112 @@
+.Facilities-and-Amenities {
+  font-family: lato;
+  color: #404040;
+  margin-top: 40px !important;
+  // width: 80% !important;
+  span{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+  }
+  em{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0px 0 0px;
+    display: block;
+  }
+  li{
+    list-style: none;
+  }
+}
+.Cuisine span {
+  font-weight: normal !important;
+  margin: 24px 5px;
+  display: inline-block;
+  font-size: 15px !important;
+  background: #F8F8F8;
+  padding: 2px 5px;
+}
+
+span.border-butm-2 {
+  display: block;
+  padding-top: 40px;
+  border-bottom: 1px solid #b8b8b8;
+}
+.Floorplan {
+  margin-top: 40px;
+  font-family: Sansita;
+  color: #000000;
+  width: 70%;
+}
+.Floorplan-img {
+  margin-top: 24px;
+  height: 380px;
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+  position: relative;
+}
+span.hover-color {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  background: #e2e2e280;
+  visibility: hidden;
+  transition: .3s ease-in-out;
+}
+.Floorplan-img:hover .hover-color{
+  opacity:1;
+  visibility:visible;
+}
+span.hover-color .mat-icon {
+  position: absolute;
+  left: 43%;
+  top: 39%;
+  font-size: 95px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+// *******************
+.Place-Policy-list {
+  position: relative;
+  width: 100%;
+  margin: 8px 0;
+  display: flex;
+}
+.Place-Policy-list span {
+  font-size: 18px;
+}
+.Place-Policy-list span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+.dot {
+  display: block;
+  width: 40px;
+  position: relative;
+}
+.dot:before {content: '';position: absolute;top: 0;left: 0;width: 18px;height: 18px;border: 1px solid #23A1A2;border-radius: 50%;}
+.dot:after {content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background: #23A1A2;
+  border-radius: 50%;
+}
+.Place-Policy-option{
+  display: block;
+  margin-top: 20px;
+  span{
+    position: relative;
+    display: block;
+    color: #404040;
+    font-size: 12px;
+  }
+  
+}

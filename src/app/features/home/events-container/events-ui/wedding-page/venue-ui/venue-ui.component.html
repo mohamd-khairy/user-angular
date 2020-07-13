@@ -1,0 +1,145 @@
+<div class="row">
+  <div class="col-3">
+    <div class="event-date mt-3">
+      <span class="event-tittle"> Date</span>
+      <div class="The-date">
+        <!-- <input type="date"> -->
+          <!-- <p-calendar  [(ngModel)]="date3" [showIcon]="true" placeholder="date"></p-calendar> -->
+          <div>
+            <mat-form-field class="example-full-width" appearance="fill" placeholder="Date">
+              <mat-label> date</mat-label>
+              <input matInput [matDatepicker]="picker">
+              <mat-datepicker-toggle matSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+      </div>
+      <div class="venue-type px-2">
+        <span>Venue type</span>
+        <mat-icon (click)="toggleCheck()">expand_less</mat-icon>
+        <div class="venue-checkbox" *ngIf="!isCheckBox">
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input"/>
+            <span class="checkbox__checkmark"></span>
+            <span>Offers</span>
+            <!-- <span class="numder"> 35 </span> -->
+          </label>
+          <!-- ***************** -->
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input"/>
+            <span class="checkbox__checkmark"></span>
+            <span>Offers</span>
+            <!-- <span class="numder"> 35 </span> -->
+          </label>
+          <!-- ***************** -->
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input"/>
+            <span class="checkbox__checkmark"></span>
+            <span>Offers</span>
+            <!-- <span class="numder"> 35 </span> -->
+          </label>
+          <!-- ***************** -->
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input"/>
+            <span class="checkbox__checkmark"></span>
+            <span>Offers</span>
+            <!-- <span class="numder"> 35 </span> -->
+          </label>
+          <!-- ***************** -->
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input"/>
+            <span class="checkbox__checkmark"></span>
+            <span>Offers</span>
+            <!-- <span class="numder"> 35 </span> -->
+          </label>
+          <!-- ***************** -->
+         
+        </div>
+        <em class="border-butm-2"></em>
+        <span>Capacity</span>
+        <mat-icon (click)="toggledisplyed()">expand_less</mat-icon>
+        <div class="price-range Capacity" *ngIf="!isAllowed">
+          <input type="number" [(ngModel)]="value">
+          <ng5-slider [(value)]="value" [options]="options"></ng5-slider> 
+        </div>
+        <em class="border-butm-2"></em>
+        <span>Price</span>
+        <mat-icon (click)="thisdisplyed()">expand_less</mat-icon>
+        <div class="price-range Price" *ngIf="!isdisplyed">
+          <div class="from-to d-flex justify-content-between">
+            <p>From <input type="number" [(ngModel)]="minValue"></p>
+            <p>To <input type="number" [(ngModel)]="maxValue"></p> 
+          </div>
+          <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="wedding-right-side d-flex justify-content-end mb-3">
+      <div class="price">Sort by : 
+        <span>   
+          <select style="border: 0;">
+          <option value="0">Price</option>
+          <option value="1">top</option>
+          <option value="1">bottom</option>
+          </select> 
+        </span>
+      </div>
+      <span style="width: 40px;"></span>
+       <div class="icons">
+        <mat-icon  class="" (click)="type = 'vertical'" [ngClass]="{'new-active': type === 'horizenl'}">format_align_center</mat-icon>
+        <span style="width: 20px; display: inline-block;"></span>
+        <mat-icon  class="" (click)="type = 'horizenl'" [ngClass]="{'new-active': type === 'vertical'}">format_align_center</mat-icon>
+    
+       </div>
+    </div>
+    <div class=" Discover-more slider" [ngClass]="{'list': type === 'horizenl'}">
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+      <app-card-services class="w-33 mb-3"></app-card-services>
+      <!--************************-->
+    </div>
+    <div class="vertical-card mb-5" [ngClass]="{'list': type === 'vertical'}">
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+      <app-vertical-card-services ></app-vertical-card-services>
+    </div>
+   
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>

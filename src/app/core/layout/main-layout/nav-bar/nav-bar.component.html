@@ -1,0 +1,8 @@
+<div class="min-menu px-140 d-flex align-items-center" [class.nav-changed]="change_nav">
+  <app-browse-categories-ui
+    [categoriesSub]="categoriesService.categories$ | async"
+  ></app-browse-categories-ui>
+  <app-navbar-keywords-ui
+    [keywords$]="navBarService.keywords$"
+  ></app-navbar-keywords-ui>
+</div>

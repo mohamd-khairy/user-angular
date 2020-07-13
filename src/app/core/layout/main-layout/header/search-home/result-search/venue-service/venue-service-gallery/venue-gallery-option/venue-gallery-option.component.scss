@@ -1,0 +1,31 @@
+div#pills-tabContent {
+  width: 99%;
+}
+.nav-link.active {
+  background: none !important;
+  color: #24a2a3 !important;
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: 4px solid #24a2a3 !important;
+}
+.nav-link {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0000004d !important;
+  border-radius: 0px !important;
+}
+.border-butm-2 {
+  border-bottom: 1px solid #b8b8b8;
+}
+.Facilities-and-Amenities {
+  font-family: Sansita;
+  color: #404040;
+  margin-top: 40px !important;
+  margin-bottom: 40px;
+  span{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

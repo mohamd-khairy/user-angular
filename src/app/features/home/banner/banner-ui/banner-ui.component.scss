@@ -1,0 +1,90 @@
+.the-slider {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  direction: initial;
+}
+.img-slider {
+  width: 100%;
+  height: 465px;
+  .the-img-slider {
+    height: 100%;
+    margin: 0 auto;
+  }
+  .slider-img {
+    width: 570px;
+    height: 394px;
+  }
+}
+:host ::ng-deep .owl-dots {
+  position: absolute !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  bottom: 10px !important;
+}
+
+:host ::ng-deep .owl-nav {
+  position: relative !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+:host ::ng-deep .owl-dots .owl-dot span {
+  background: #ffffff !important;
+  width: 18px !important;
+  height: 20px !important;
+}
+:host ::ng-deep .owl-carousel.owl-theme.owl-loaded.owl-drag{
+  direction: ltr;
+}
+:host ::ng-deep .owl-nav .owl-prev {
+  position: absolute !important;
+  left: 15px !important;
+  bottom: 220px !important;
+  width: 60px !important;
+  height: 60px !important;
+  font-size: 30px !important;
+  line-height: 55px;
+  &:hover {
+    background: #f1f1f1d9 !important;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px #fff;
+  }
+  z-index: 1000;
+}
+
+:host ::ng-deep .owl-nav .owl-next {
+  position: absolute !important;
+  right: 15px !important;
+  bottom: 220px !important;
+  width: 60px !important;
+  height: 60px !important;
+  font-size: 30px !important;
+  background: none !important;
+  cursor: pointer;
+  line-height: 55px;
+  &:hover {
+    background: #f1f1f1d9 !important;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px #fff;
+    
+  }
+  z-index: 1000;
+}
+::ng-deep .owl-dots {
+  position: relative;
+  bottom: 0;
+  transform: translateY(-20px);
+}
+// ***************************************medi-screen*********************************************
+@media only screen and (max-width: 1680px) and (min-width: 1280px) {
+  .the-img-slider .title {
+    text-align: left;
+    align-items: left;
+    h3 {
+      line-height: 75px;
+      margin-top: 22px;
+      font-size: 55px;
+    }
+  }
+}

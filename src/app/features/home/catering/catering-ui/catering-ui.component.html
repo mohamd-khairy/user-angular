@@ -1,0 +1,45 @@
+<div class="head" *ngIf="(state$ | async) as state" [ngClass]="{'NewIcon': lang == 'ar'}" [dir]="dir">
+  <h2>catering</h2>
+  <ul class="menu">
+    <li class="click-now" [ngClass]="{'select': category == state.first}" (click)="selectCategory(category)"
+      *ngFor="let category of state.categories">
+      {{category}}</li>
+  </ul>
+  <div class="slider mt-5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let service of state.services">
+        <div class="img-slider">
+          <div class="the-img-slider d-block">
+            <div class="slider-img">
+              <img [src]="
+              service.image
+                ? service.image
+                : '../../../../assets/OGF9H290.png'
+            " alt="">
+              <span class="icon">
+                <mat-icon>favorite_border</mat-icon>
+                <em class="add-list">add to wishlist</em>
+              </span>
+            </div>
+            <span class="descound" *ngIf="service.offer">
+              {{ service.offer }}
+            </span>
+            <div class="detil">
+              <h6>{{ service.name }}</h6>
+              <span>Starts from</span>
+              <h3>{{ service.price }}</h3>
+              <h5>
+                {{ service.neighborhood }}
+                <em><span class="border ">{{service.subCategory}}</span>
+                  <mat-icon>people_outline</mat-icon>{{ service.max_num_order }}
+                </em>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+  </div>
+  <div class="show-more" ><a routerLink="/ResultsPackage">Show More <i class="fa fa-chevron-right"></i></a></div>
+</div>

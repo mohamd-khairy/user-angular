@@ -1,0 +1,20 @@
+<div class="payment-option mt-4">
+  <span>Credit Card Name</span>
+  <em class="name">Mohamed Harfoush El Mharfash</em>
+  <!-- ************** -->
+  <span>Credit Card Number</span>
+  <em class="name">************8912</em>
+  <!-- *********************** -->
+  <span>Expiration Date</span>
+  <em class="name">12/22</em>
+
+  <div class="save-edite d-flex mt-4">
+    <div class="save-edite-changes  " (click)="type = 'opened'" [ngClass]="{'active': type === 'opened'}">
+      Edit Payment
+    </div>
+    <span style="width: 20px;display: inline-block;"></span>
+    <div class="save-edite-changes" (click)="type = 'closed'" [ngClass]="{'active': type === 'closed'}">
+      Delete 
+    </div>
+  </div>
+</div>

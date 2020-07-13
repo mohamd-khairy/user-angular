@@ -1,0 +1,9 @@
+<app-sub-header [ngClass]="{'Change-dir': lang == 'ar'}" [dir]="dir" ></app-sub-header>
+<app-header [dir]="dir"></app-header>
+<app-nav-bar [dir]="dir"></app-nav-bar>
+
+<main [dir]="dir">
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer [dir]="dir"></app-footer>

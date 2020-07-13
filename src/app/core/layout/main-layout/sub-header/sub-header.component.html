@@ -1,0 +1,33 @@
+<div class="header px-140">
+  <div class="d-flex">
+    <button class="laguage-btn" (click)="changeLanguage();">العربيه</button>
+    <span class="the-line-between"></span>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+
+        <span i18n>Egypt</span>
+        <span class="w-17"></span>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <label class="container-label">Egypt
+          <input type="radio" checked="checked" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container-label">Saudi Arabia
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container-label">United Arab Emirates
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </li>
+  </div>
+  <div>
+    <span i18n>Sell With Us</span>
+  </div>
+</div>

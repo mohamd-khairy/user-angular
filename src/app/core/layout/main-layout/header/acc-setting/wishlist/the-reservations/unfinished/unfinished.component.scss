@@ -1,0 +1,92 @@
+.unfinished-img {
+  width: 300px;
+  height: 250px;
+}
+.detiles {
+  margin: 0 10px;
+  position: relative;
+}
+.unfinished-detile span {
+  font-size: 14px;
+  color: #00000080;
+}
+.unfinished-detile em {
+  width: 20px;
+  text-align: center;
+}
+span.sm-tittel {
+  font-size: 18px;
+  color: #404040;
+  margin: 10px 0;
+}
+.Add-ons span {
+  color: #404040;
+  font-size: 14px;
+  margin: 10px 0;
+  display: inline-block;
+  font-weight: 500;
+}
+.Add-ons-detiels {
+  display: flex;
+  position: relative;
+  margin: 8px 2px;
+}
+.The-Add-ons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+}
+.Add-ons-detiels img {
+  width: 45px;
+  height: 45px;
+}
+.Add-ons-detiels span {
+  display: inline-block;
+  padding: 0 10px;
+  color: #00000099;
+  font-size: 14px;
+  font-weight: normal;
+}
+.right-side {
+  position: relative;
+  padding: 10px;
+  .money {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #404040;
+    font-size: 18px;
+    font-weight: 600;
+    right: 0;
+  }
+  .date {
+    color: #00000080;
+  }
+}
+.morre {
+  cursor: pointer;
+  color: #24A2A3;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.botn-Continue {
+  padding: 10px 50px;
+  border: 1px solid #23a1a2;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: #23a1a2;
+}
+.unfinished-dawn-option {
+  margin-top: 40px;
+  position: relative;
+}
+.All-prices {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #b3b2b285;
+}

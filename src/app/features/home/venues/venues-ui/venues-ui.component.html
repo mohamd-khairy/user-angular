@@ -1,0 +1,139 @@
+<div class="container">
+  <h4>venues</h4>
+  <ul class="menu">
+    <div class="click-now" [ngClass]="{'select': category == (state$ | async).first}" (click)="selectCategory(category)"
+      *ngFor="let category of (state$ | async).categories">
+      {{ category }}</div>
+  </ul>
+  <div class="slider mt-5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let service of (state$ | async).services">
+        <div class="img-slider">
+          <div class="the-img-slider d-block">
+            <div class="slider-img">
+              <img [src]="
+                  service.image
+                    ? service.image
+                    : '../../../../assets/OGF9H290.png'
+                " alt="" />
+              <span class="icon">
+                <mat-icon>favorite_border</mat-icon>
+                <em class="add-list">add to wishlist</em>
+              </span>
+            </div>
+            <span class="descound" *ngIf="service.offer">
+              {{ service.offer }}
+            </span>
+            <div class="detil">
+              <h6>{{ service.name }}</h6>
+              <span>Starts from</span>
+              <h3>{{ service.price }}</h3>
+              <h5>
+                {{ service.neighborhood }}
+                <em>
+                  <mat-icon>people_outline</mat-icon>{{ service.max_capacity }}
+                </em>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!-- <app-card-services [service]="service" ></app-card-services> -->
+      </ng-template>
+      <!-- <ng-template carouselSlide>
+        <div class="img-slider">
+          <div class="the-img-slider d-block">
+            <div class="slider-img">
+              <img src="../../../../assets/OGF9H290.png" alt="" />
+              <span class="icon"
+                ><mat-icon>favorite_border</mat-icon>
+                <em class="add-list">add to wishlist</em>
+              </span>
+            </div>
+            <div class="detil">
+              <h6>Fancy Catering service</h6>
+              <span>Starts from</span>
+              <h3>400,999 EGP</h3>
+              <h5>
+                Maadi <em><i class="fa fa-user"></i> 200</em>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="img-slider">
+          <div class="the-img-slider d-block">
+            <div class="slider-img">
+              <img src="../../../../assets/OGF9H390.png" alt="" />
+              <span class="icon"
+                ><mat-icon>favorite_border</mat-icon>
+                <em class="add-list">add to wishlist</em>
+              </span>
+            </div>
+            <div class="detil">
+              <h6>Fancy Catering service</h6>
+              <span>Starts from</span>
+              <h3>400,999 EGP</h3>
+              <h5>
+                Maadi <em><i class="fa fa-user"></i> 200</em>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="img-slider">
+          <div class="the-img-slider d-block">
+            <div class="slider-img">
+              <img src="../../../../assets/OGF9H490.png" alt="" />
+              <span class="icon"
+                ><mat-icon>favorite_border</mat-icon>
+                <em class="add-list">add to wishlist</em>
+              </span>
+            </div>
+            <div class="detil">
+              <h6>Fancy Catering service</h6>
+              <span>Starts from</span>
+              <h3>400,999 EGP</h3>
+              <h5>
+                Maadi <em><i class="fa fa-user"></i> 200</em>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="img-slider">
+          <div class="the-img-slider d-block">
+            <div class="slider-img">
+              <img src="../../../../assets/OGF9H590.png" alt="" />
+              <span class="icon"
+                ><mat-icon>favorite_border</mat-icon>
+                <em class="add-list">add to wishlist</em>
+              </span>
+            </div>
+            <div class="detil">
+              <h6>Fancy Catering service</h6>
+              <span>Starts from</span>
+              <h3>400,999 EGP</h3>
+              <h5>
+                Maadi <em><i class="fa fa-user"></i> 200</em>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </ng-template> -->
+    </owl-carousel-o>
+  </div>
+  <div class="show-more">Show More <i class="fa fa-chevron-right"></i></div>
+  <!-- *************************************** -->
+  <!-- <script>
+   $(function() {
+    $('click-now').click( function() {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+});
+ </script> -->
+  <!-- **************************************** -->
+</div>

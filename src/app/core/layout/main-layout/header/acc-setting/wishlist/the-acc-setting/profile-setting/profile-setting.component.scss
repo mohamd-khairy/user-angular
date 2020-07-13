@@ -1,0 +1,64 @@
+.form-group {
+  position: relative;
+  width: 440px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.form-group label {
+  color: #00000099;
+  font-size: 14px;
+  display: block;
+  font-weight: 500;
+}
+.form-group.birthday .form-control{
+    width: 31%;
+    display: inline-block;
+  }
+.save-edite-changes {
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  background: #24A2A3;
+  color: #fff;
+}
+// .save-edite-changes.active {
+//   background: #24A2A3;
+//   color: #fff;
+//   text-align: center;
+// }
+.form-group > input {
+  font-size: 12px;
+  height: 40px;
+  color: #0000004D;
+}
+.security {
+  position: relative;
+  height: 40px;
+  background: #e8f0fe;
+  align-items: center;
+  padding: 0 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.security span:first-child {
+  color: #000;
+}
+.form-control.e-mail{
+  background: #fff !important;
+}
+.security span:last-child {
+  color: #24A2A3;
+  cursor: pointer;
+}
+.form-group select#exampleFormControlSelect1 {
+  font-size: 12px;
+  height: 40px;
+  color: #0000004D;
+}
+.form-group select#exampleFormControlSelect1 option {
+  font-size: 18px;
+}

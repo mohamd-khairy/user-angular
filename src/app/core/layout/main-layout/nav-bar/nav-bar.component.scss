@@ -1,0 +1,144 @@
+.min-menu {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  // box-shadow: 0px 2px 2px #80808047;
+}
+.min-menu.nav-changed {
+  position: fixed;
+  z-index: 99;
+  top: 80px;
+  transition: .2s ease-in-out;
+}
+.menu {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+  align-items: center;
+  li:first-child {
+    margin-left: 0 !important;
+    padding-top: 13px;
+    padding-left: 0px;
+    cursor: pointer;
+    &:hover {
+      color: #23a1a2 !important;
+      background: none;
+    }
+    &:hover .icon-nav {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s ease-in-out;
+    }
+    &:hover span.icon-2 {
+      opacity: 1;
+      visibility: visible;
+      transition: 0.2s ease-in-out;
+    }
+  }
+  li {
+    width: max-content;
+    margin: 0px 30px;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    line-height: 23px;
+    padding: 6px 6px;
+    border-radius: 5px;
+    &:hover {
+      background: #e0e0e0;
+    }
+    & > em {
+      width: 10px;
+    }
+  }
+}
+span.material-icons.icon-nav {
+  display: inline-block !important;
+
+  font-size: 24px;
+}
+// ****************************************************
+span.icon-2 {
+  position: absolute;
+  left: 0px;
+  font-size: 36px !important;
+  top: 1px;
+  opacity: 0;
+  visibility: hidden;
+  color: #23a1a2 !important;
+  transition: 0.2s ease-in-out;
+}
+.the-sun-meu {
+  position: absolute;
+  width: 481px;
+  height: 381px;
+  background: #fff;
+  z-index: 2;
+  top: 32px;
+  padding: 26px;
+  transition: 0.3s ease-in-out;
+  border-radius: 0 0 9px 9px;
+}
+.sub-men {
+  position: relative;
+  height: 50px;
+  display: block;
+}
+.drowp-dawn {
+  width: 181px;
+  height: 50px;
+  position: relative;
+  font-size: 22px;
+  color: #000000bf;
+}
+em.right-icon {
+  position: absolute;
+  right: 20px;
+  color: #000000bf;
+  font-size: 30px;
+}
+.small-menu span {
+  display: block;
+  font-size: 22px;
+  color: #00000099;
+  line-height: 40px;
+  margin: 0 40px;
+}
+.small-menu > span:hover {
+  color: #23a1a2 !important;
+}
+.small-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0 6px;
+}
+.drowp-dawn:hover {
+  color: #23a1a2;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.drowp-dawn.first:hover ~ .small-menu.menu-one {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out;
+}
+.drowp-dawn.scound:hover ~ .small-menu.menu-tow {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out;
+}
+em.w-4.position-relative:before {
+  content: '';
+  position: absolute;
+  text-align: center;
+  width: 1px;
+  height: 30px;
+  background: #b9b9b978;
+  top: -12px;
+}

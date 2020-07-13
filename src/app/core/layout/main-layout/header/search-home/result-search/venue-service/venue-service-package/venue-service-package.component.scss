@@ -1,0 +1,80 @@
+.package-home{
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  span{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+  }
+}
+.package-home-img {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.package-home-service {
+  position: relative;
+  width: 32%;
+  margin: 0 10px;
+}
+span.Royal-Wedding-Packages {
+  margin-top: 20px;
+  color: #000000;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  font-family: lato;
+}
+em.Contains {
+  margin-top: 20px;
+  display: block;
+  color: #00000080;
+  font-size: 12px;
+}
+.package-home-service p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  line-height: 33px;
+}
+em.old-offer {
+  display: inline-block;
+  width: 80px;
+  color: #0000004D;
+  position: relative;
+}
+.the-old:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 70%;
+  height: 1px;
+  background: #BFBFBF;
+
+}
+em.new-offer {
+  font-size: 20px;
+  font-weight: 600;
+}
+.more-service {
+  font-size: 15px;
+  font-weight: 500;
+}
+.more-service .mat-icon {
+  font-size: 20px;
+  margin: 0 12px;
+}
+.border-butm-2 {
+  margin: 40px 0;
+  border-bottom: 1px solid #b8b8b8;
+}
+// ***************************************
+
+
+.Venues-Explore-option {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}

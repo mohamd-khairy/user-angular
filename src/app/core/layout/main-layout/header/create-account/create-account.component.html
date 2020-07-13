@@ -1,0 +1,28 @@
+<div class="sign-up " *ngIf="!headerService.active">
+   <nav>
+    <div class="nav nav-tabs sign-up-tabs d-flex justify-content-center mb-4 pb-2" id="nav-tab" role="tablist">
+        <a class="tab-btn active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Sign In</a>
+        <span style="width: 20px; display: inline-block;"></span>
+        <a class="tab-btn" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Sign Up</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" style="background: #fff;">
+      <div style="background: #fff;">
+        <app-sign-in-acc></app-sign-in-acc>
+      </div>
+      <div style="background: #fff;">
+        <div class="Forgot-password pt-3" (click)="headerService.active=true" >
+          <span>Forgot password?</span> 
+        </div>
+        <app-new-sign-in></app-new-sign-in>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <app-sign-up-acc></app-sign-up-acc>
+    </div>
+  </div> 
+</div>
+<div class="edit-password" *ngIf="headerService.active">
+  <app-edit-password></app-edit-password>
+</div>

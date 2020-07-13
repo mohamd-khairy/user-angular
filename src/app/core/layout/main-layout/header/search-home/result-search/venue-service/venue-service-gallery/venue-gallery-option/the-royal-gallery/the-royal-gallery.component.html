@@ -1,0 +1,152 @@
+<div class="thi-gallery d-flex justify-content-between">
+  <div class="gallery ">
+    <app-the-venue-gallery></app-the-venue-gallery>
+   </div>
+   <div class="option-detils ">
+    <em class="w-100 d-block Royal-tittle">Royal Majestic Queen Marry Hall</em>
+     <div class="Royal-Majestic-Hall d-flex justify-content-between position-relative mb-4 mt-4">
+      <div class="img-hotel d-flex ">
+       <em>by</em>
+        <span>San Stefano Hotel</span>
+      </div>
+      <div class="venue-type d-flex">
+        <span class="Royal-Majestic-detils">Venue</span>
+        <span class="space"></span>
+        <span class="Royal-Majestic-detils">Open Air - Villa</span>
+        <!-- <div class="card-buttom">
+         <mat-icon>favorite_border</mat-icon> 
+         <span class="space-2"></span>
+         <span class="space"></span>
+         <mat-icon>reply</mat-icon>
+       </div> -->
+      </div> 
+     </div>
+     
+    <div class="Reservation-Date">
+      <span>Reservation Date</span>
+     <!-- <input type="date" name="" id="">  -->
+      <!-- <div class="col-xs-12 col-12 col-md-4 form-group theDate">
+         <input type="text"
+               placeholder="Datepicker"
+               class="form-control"
+               bsDatepicker> 
+               
+               <mat-icon>keyboard_arrow_down</mat-icon>
+      </div> -->
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label> date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="the-time mt-3">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item ">
+          <span class="nav-link active" id="pills-home-tab" data-toggle="pill">Night</span>
+        </li>
+        <li class="nav-item ">
+          <span class="nav-link" id="pills-profile-tab" data-toggle="pill">Morning</span>
+        </li>
+        <li class="nav-item ">
+          <span class="nav-link" id="pills-contact-tab" data-toggle="pill">All day</span>
+        </li>
+      </ul>
+     </div>
+     <div class="total-money d-flex justify-content-between mt-5 mb-5">
+       <span>22,000EGP</span>
+       <em>(All prices Inclusive of VAT)</em>
+     </div>
+     <span class="mine-titel">Fits with</span>
+     <div class="Fits-with-detile d-flex">
+       <div class="fits-with-btn">Weddings</div>
+       <div class="fits-with-btn">Birthdays</div>
+       <div class="fits-with-btn">Engagements</div>
+     </div>
+     <!-- *********************** -->
+     <div class="data-services-detile mt-3 ">
+      <span class="mine-titel">Capacity</span>
+      <div class="d-flex">
+        <span class="data-services-type d-flex">
+          <em>min</em>
+          <span>
+            <em>200</em>
+            <!-- <mat-icon>people_outline</mat-icon> -->
+          </span>
+        </span>
+        <span class="data-services-type d-flex">
+          <em>max</em>
+          <span>
+            <em>400</em>
+            <!-- <mat-icon>people_outline</mat-icon> -->
+          </span>
+        </span>
+      </div>
+    </div >
+    <!-- ******************** -->
+    <div class="data-services-detile mt-3 ">
+      <span class="mine-titel">Seating Arrangements</span>
+      <div class="d-flex">
+        <span class="data-services-type ">
+          <em>Classroom</em>
+          <span>
+            <em>40</em>
+            <mat-icon>qr_code</mat-icon> 
+          </span>
+        </span>
+        <span class="space-3"></span>
+        <span class="data-services-type ">
+          <em>Theater</em>
+          <span>
+            <em>40</em>
+             <mat-icon>qr_code_scanner</mat-icon> 
+          </span>
+        </span>
+        <span class="space-3"></span>
+        <span class="data-services-type ">
+          <em>Banquet</em>
+          <span>
+            <em>60</em>
+             <mat-icon>business</mat-icon> 
+          </span>
+        </span>
+        <span class="space-3"></span>
+        <span class="data-services-type ">
+          <em>Conference</em>
+          <span>
+            <em>-</em>
+             <mat-icon>vertical_split</mat-icon> 
+          </span>
+        </span>
+        <span class="space-3"></span>
+        <span class="data-services-type ">
+          <em>U shape</em>
+          <span>
+            <em>30</em>
+             <mat-icon>view_quilt</mat-icon> 
+          </span>
+        </span>
+      </div>
+    </div >
+    <!-- **************** -->
+    <div class="data-services-detile mt-3 ">
+      <span class="mine-titel">Description</span>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Bibendum est ultricies integer quis.
+        Iaculis urna id volutpat lacus laoreet.
+        Mauris vitae ultricies leo integer malesuada. 
+        Ac odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod.
+        Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl.
+        Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. 
+      </p>
+    </div>
+   </div>
+   <app-venue-service-option class="" style="width: 25%;"></app-venue-service-option> 
+</div>
+ <!-- ************************************************************************ -->
+ 
+ 

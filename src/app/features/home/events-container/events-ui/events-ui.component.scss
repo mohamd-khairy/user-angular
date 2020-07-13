@@ -1,0 +1,127 @@
+.images {
+  position: relative;
+  margin: 0 3px;
+  height: 740px;
+  cursor: pointer;
+  background-size: cover;
+  &:first-child {
+    width: 774px;
+    // background-image: url('src/assets/Rectangle 667.png');
+  }
+  &:nth-of-type(2) {
+    width: 497px;
+    // background-image: url('src/assets/Rectangle 669.png');
+  }
+  &:last-child {
+    width: 636px;
+  }
+  h4 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 69px;
+    top: calc(50% - 24px);
+    text-transform: uppercase;
+  }
+  .the-img {
+    height: 363px;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 9px;
+    &:first-child {
+      position: relative;
+      // background-image: url('src/assets/Rectangle 672.png');
+    }
+    &:last-child {
+      position: relative;
+      // background-image: url('src/assets/Rectangle 671.png');
+    }
+  }
+}
+.btn-img {
+  position: absolute;
+  width: 266px;
+  height: 68px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 500;
+  bottom: 0;
+  background: #f48271;
+  line-height: 63px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+.svg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.fisrt-child {
+  text-align: left !important;
+  width: 400px;
+  margin: 0 30px;
+  font-size: 60px !important;
+}
+.w-16 {
+  width: 16px;
+}
+.images.two{
+  width: 430px !important;
+  h4{
+    font-size: 30px !important;
+  }
+}
+// ***************************************medi-screen*********************************************
+@media only screen and (max-width:1680px){
+
+  .images.one{
+    width: 470px !important;
+    h4{
+      font-size: 30px !important;
+    }
+  }
+  .images.two{
+    width: 430px !important;
+    h4{
+      font-size: 30px !important;
+    }
+  }
+  .images.three{
+    width: 530px !important;
+    h4{
+      font-size: 30px !important;
+    }
+  }
+   .btn-img{
+     width: max-content;
+     padding: 2px 20px;
+     font-size: 20px;
+   }
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1600px) and (min-width: 1536px) {
+ 
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1440px) and (min-width: 1370px){
+  .images.one{
+    width: 450px !important;
+  }
+  .images.two{
+    width: 430px !important;
+  }
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1366px) and (min-width: 1280px){
+   
+}
+// *************************** end-width ****************************
+@media only screen and (max-width: 1280px) and (min-width: 1200px){
+
+}

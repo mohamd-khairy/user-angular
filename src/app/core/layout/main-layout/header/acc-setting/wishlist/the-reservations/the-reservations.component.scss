@@ -1,0 +1,21 @@
+div#pills-tabContent {
+  width: 99%;
+}
+.nav-link.active {
+  background: none !important;
+  color: #24a2a3 !important;
+  border-bottom: 4px solid #24a2a3 !important;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0000004d !important;
+  border-radius: 0px !important;
+}
+.border-butm-2 {
+  border-bottom: 1px solid #b8b8b8;
+}
+ul#pills-tab {
+  border-bottom: 1px solid #b8b8b8;
+}

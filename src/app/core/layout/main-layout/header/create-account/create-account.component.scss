@@ -1,0 +1,20 @@
+.tab-btn {font-size: 20px;color: #0000004D;position: relative;}
+.tab-btn:hover {
+    color: #0000004D;
+}
+.tab-btn.active {
+    color: #24A2A3;
+}
+.tab-btn.active:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background: #24A2A3;
+    top: 29px;
+}
+.Forgot-password span{
+    color: #24A2A3;
+    text-decoration: underline;
+  }

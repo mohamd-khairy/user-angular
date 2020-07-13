@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  height: 48px;
+  background: #168586;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.laguage-btn {
+  color: #fff;
+  font-size: 16px;
+  width: max-content;
+  border: 0;
+  background: none;
+  outline: none;
+}
+span {
+  color: #fff;
+  font-size: 16px;
+}
+.the-line-between {
+  text-align: center;
+  width: 50px;
+  display: inline-block;
+  &::after {
+    position: absolute;
+    width: 1px;
+    height: 34px;
+    background: #4496f33d;
+    content: '';
+    top: 9px;
+  }
+}
+.more-country {
+  position: absolute;
+  width: 280px;
+  background: #fff;
+  left: 0;
+  top: 30px;
+  z-index: 2;
+  padding: 15px;
+  text-align: left;
+  border-radius: 9px;
+}
+.more-country .form-check {
+  margin: 20px;
+}
+label.form-check-label {
+  color: #000000BF;
+  font-size: 18px;
+}
+span.country em {
+  padding: 0 35px;
+}
+li.nav-item.dropdown {
+  list-style: none;
+}
+.dropdown-menu.show {
+  width: 280px;
+  height: 210px;
+}
+label.container-label {
+  margin: 26px 17px;
+}
+.dropdown-toggle::after {
+ display: none;
+}
+.mat-icon {
+  position: absolute;
+  top: 7px;
+}
+.w-17{
+  width: 17px;
+  display: inline-block;
+}
+label.container-label:hover {
+  color: #168586;
+}
+a#navbarDropdown {
+  width: 120px;
+  position: relative;
+}
+/* The radio button styles */
+.container-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: black;
+}
+/* Hide the browser's default radio button */
+.container-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+/* When the radio button is checked, add a blue background */
+.container-label input:checked ~ .checkmark {
+  background-color: #23A1A2;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "\2713";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container-label input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.container-label .checkmark:after {
+ 	top: 2px;
+	left: 7px;
+	width: 8px;
+	height: 8px;
+  color: white;
+}
+// *****************************************
+
+// ***************************************medi-screen*********************************************
