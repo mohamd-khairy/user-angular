@@ -22,7 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": true,
+            "localize": false,
             "outputPath": "dist/evntoo-user-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
