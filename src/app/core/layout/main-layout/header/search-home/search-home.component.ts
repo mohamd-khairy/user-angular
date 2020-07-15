@@ -52,10 +52,11 @@ export class SearchHomeComponent implements AfterViewInit {
     private route: ActivatedRoute) {
 
     this.route.queryParams.subscribe(params => {
-      if (params['category']) {
-        let category = 1;
-        if (params['category'] == 2) {
-          category = 2;
+      if (params['city']) {
+        if (window.location.pathname.indexOf('venue') > -1) {
+          var category = 1;
+        } else if (window.location.pathname.indexOf('catering') > -1) {
+          var category = 2;
         }
         setTimeout(() => {
           this.searchForm.get('category').setValue(category);

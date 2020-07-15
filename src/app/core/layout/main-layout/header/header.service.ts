@@ -103,11 +103,11 @@ export class HeaderService {
     this.result_catering_state.next((this._result_catering_state = currentState));
   }
 
-  search_result(data, page = 1, pageSize = 12, sort = null) {
-    let category = data.category;
+  search_result(data, page = 1, pageSize = 30, sort = null) {
+    let category = data.category
     const searchDate = data;
 
-    let getUrl = `search?category=${data.category}&city=${data.city}&page=${page}`;
+    let getUrl = `city=${data.city}&page=${page}`;
 
     if (data.search && data.search != null && data.search != 'null') {
       getUrl += `&text=${data.search}`;
@@ -121,7 +121,7 @@ export class HeaderService {
       .pipe(
         filter((query) => query),
         switchMap(() => {
-          return this.http.get(getUrl);
+          return this.http.get("search?category=" + category + "&" + getUrl + "&page_size=" + pageSize);
         })
       )
       .subscribe((data: any) => {
@@ -130,7 +130,7 @@ export class HeaderService {
           const current_page = data.current_page;
           const total = data.total;
 
-          let query_string = getUrl.split("?", 2)[1];
+          let query_string = getUrl;
 
           if (category == 1) {
             const result = data.data;
@@ -172,11 +172,11 @@ export class HeaderService {
   }
 
 
-  filter_search_result(data, page = 1, pageSize = 12, filters = null) {
+  filter_search_result(data, page = 1, pageSize = 30, filters = null) {
     let category = data.category;
     const searchDate = data;
 
-    let getUrl = `search/filter?category=${data.category}&city=${data.city}&page=${page}`;
+    let getUrl = `city=${data.city}&page=${page}`;
 
     if (data.search && data.search != null && data.search != 'null') {
       getUrl += `&text=${data.search}`;
@@ -226,7 +226,7 @@ export class HeaderService {
       .pipe(
         filter((query) => query),
         switchMap(() => {
-          return this.http.get(getUrl);
+          return this.http.get("search/filter?category=" + category + "&" + getUrl + "&page_size=" + pageSize);
         })
       )
       .subscribe((data: any) => {
@@ -235,7 +235,7 @@ export class HeaderService {
           const current_page = data.current_page;
           const total = data.total;
 
-          let query_string = getUrl.split("?", 2)[1];
+          let query_string = getUrl;
 
           if (category == 1) {
 

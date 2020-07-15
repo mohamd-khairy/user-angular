@@ -7,48 +7,57 @@
         <target>مصر</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/main-layout/sub-header/sub-header.component.html</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="02d4e41da5388595ea050df82e97ae0ceb7cbed1" datatype="html">
-        <source>Egypt
+      <trans-unit id="aa8d8957b6a498e6d5b6599c740d7081483178d5" datatype="html">
+        <source>
+        <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>Egypt
           <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
-        </source>
-        <target>مصر</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/layout/main-layout/sub-header/sub-header.component.html</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="99cb985dd730d3da352732b5436b2d7abbd3c543" datatype="html">
-        <source>Saudi Arabia
+        <x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+        <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>Saudi Arabia
+          <x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        <x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+        <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>United Arab Emirates
+          <x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        <x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+      </source>
+       <target>
+        <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>مصر
           <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
-        </source>
-        <target>مصر</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/layout/main-layout/sub-header/sub-header.component.html</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ab58cf1a9a0466201b87644663515713cb37eaf2" datatype="html">
-        <source>United Arab Emirates
-          <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+        <x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+        <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>السعودية
+          <x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/>
           <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
-        </source>
-        <target>مصر</target>
+        <x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+        <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>الامارات
+          <x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        <x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+      </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/main-layout/sub-header/sub-header.component.html</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="33eb65b6026a97fa2fcec38045707db31bd2eb76" datatype="html">
         <source>Sell With Us</source>
-        <target>مصر</target>
+        <target>تسوق معنا</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/layout/main-layout/sub-header/sub-header.component.html</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+        <trans-unit id="42f116b968615ce04395314efbf6c7a4408bf328" datatype="html">
+        <source>what are you looking for?</source>
+        <target>عما تبحث ؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/search-home.component.html</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
     </body>

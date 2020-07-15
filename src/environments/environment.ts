@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURL: 'https://evntoo.website/api/',
+  apiURL: 'http://evntoo-user.test/api/',
 };
 
 /* 'http://evntoo.website/api/'

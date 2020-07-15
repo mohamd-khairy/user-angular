@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
     @Inject(LOCALE_ID) public locale: string
   ) { }
   ngOnInit() {
-    // console.log('THE CURRENT LANG',this.locale);
-
+    console.log('THE CURRENT LANG', this.locale);
   }
 }

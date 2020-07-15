@@ -193,11 +193,11 @@ export class CateringResultUiComponent implements OnInit {
 
   getPage(page: number) {
     this.check_not_found_filters();
-    this.headerService.filter_search_result(this.searchDate, page, 12, this.filters)
+    this.headerService.filter_search_result(this.active_searchData, page, 30, this.filters)
   }
 
   filter() {
-    this.headerService.filter_search_result(this.searchDate, this.current_page, 12, this.filters)
+    this.headerService.filter_search_result(this.active_searchData, this.current_page, 30, this.filters)
   }
 
   set_food_types(e) {
@@ -258,7 +258,7 @@ export class CateringResultUiComponent implements OnInit {
     this.filters.fits_with = JSON.stringify(this._valueFitsWith);
 
 
-    if (this.filters.fits_with.length > 2) {
+    if (this._valueFitsWith.length > 0) {
       this.start_fits = false;
     } else {
       this.start_fits = true;
@@ -362,8 +362,10 @@ export class CateringResultUiComponent implements OnInit {
     if (this.route.snapshot.queryParams.text) {
       var text = this.route.snapshot.queryParams.text;
     }
-    if (this.route.snapshot.queryParams.category) {
-      var category = this.route.snapshot.queryParams.category;
+    if (window.location.pathname.indexOf('venue') > -1) {
+      var category = 1;
+    } else if (window.location.pathname.indexOf('catering') > -1) {
+      var category = 2;
     }
     if (this.route.snapshot.queryParams.city) {
       var city = this.route.snapshot.queryParams.city;

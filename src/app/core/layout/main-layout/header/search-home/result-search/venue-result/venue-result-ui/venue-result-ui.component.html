@@ -1,6 +1,8 @@
 <div class="home-catering d-flex justify-content-between" [ngClass]="{'NewIcon': lang == 'ar'}" [dir]="dir">
     <div class="left-side-home-catering">
-        <span class="title"> <a href="#">Home</a> <mat-icon>keyboard_arrow_right</mat-icon> Catering </span>
+        <span class="title"> <a href="#">Home</a>
+            <mat-icon>keyboard_arrow_right</mat-icon> Catering
+        </span>
         <div class="search-type title-top" [ngClass]="{'NewIcon': lang == 'ar'}" [dir]="dir">
             <span> Search Type </span>
             <label class="checkbox">
@@ -9,7 +11,7 @@
                 <span>Packages</span>
                 <!-- <span class="numder"> 33 </span> -->
             </label>
-            <label class="checkbox" >
+            <label class="checkbox">
                 <input type="checkbox" [(ngModel)]="filters.offer" (change)="filter()" class="checkbox__input" />
                 <span class="checkbox__checkmark"></span>
                 <span>Offers</span>
@@ -21,21 +23,23 @@
         <div class="Cuisine title-top" [ngClass]="{'NewIcon': lang == 'ar'}" [dir]="dir">
             <div class="Ttitle-top d-flex justify-content-between">
                 <span> Venue Type </span>
-            <mat-icon (click)="TheDisplay()">keyboard_arrow_up</mat-icon>
+                <mat-icon (click)="TheDisplay()">keyboard_arrow_up</mat-icon>
             </div>
-          <div *ngIf="!IsDisplay" class="all-checked" [ngClass]="{'more': Tistype === 'Notactive'}">
-            <label class="checkbox" *ngFor="let item of business_types">
-                <input type="checkbox" [ngModel]="_valueBusinessTypes?.includes(item.id.toString()) ? true : false"
-                    [value]="item.id" (change)="set_business_types($event); filter()" class="checkbox__input" />
-                <span class="checkbox__checkmark"></span>
-                <span>{{item.name}}</span>
-                <!-- <span class="numder"> 33 </span> -->
-            </label>
-          </div>
-          <div class="click-more mt-2">
-            <span  class="ThisShow-more" (click)="Tistype = 'Notactive'" [ngClass]="{'new-active': Tistype === 'active'}">Show more</span>
-             <span class="ThisShow-more " (click)="Tistype = 'active'" [ngClass]="{'new-active': Tistype === 'Notactive'}">See less</span> 
-           </div>
+            <div *ngIf="!IsDisplay" class="all-checked" [ngClass]="{'more': Tistype === 'Notactive'}">
+                <label class="checkbox" *ngFor="let item of business_types">
+                    <input type="checkbox" [ngModel]="_valueBusinessTypes?.includes(item.id.toString()) ? true : false"
+                        [value]="item.id" (change)="set_business_types($event); filter()" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                    <span>{{item.name}}</span>
+                    <!-- <span class="numder"> 33 </span> -->
+                </label>
+            </div>
+            <div class="click-more mt-2">
+                <span class="ThisShow-more" (click)="Tistype = 'Notactive'"
+                    [ngClass]="{'new-active': Tistype === 'active'}">Show more</span>
+                <span class="ThisShow-more " (click)="Tistype = 'active'"
+                    [ngClass]="{'new-active': Tistype === 'Notactive'}">See less</span>
+            </div>
         </div>
 
         <!-- ******************** -->
@@ -44,10 +48,10 @@
                 <span> District </span>
                 <mat-icon (click)="theDistrict()">keyboard_arrow_up</mat-icon>
             </div>
-            <div *ngIf="!IsDistrict" class="all-checked" [ngClass]="{'more' : Thistype === 'OnActive'}" >
+            <div *ngIf="!IsDistrict" class="all-checked" [ngClass]="{'more' : Thistype === 'OnActive'}">
                 <label class="checkbox" *ngFor="let item of neighborhood">
-                    <input type="checkbox" [ngModel]="_valueNeighborhood?.includes(item.name.toString()) ? true : false"
-                        [value]="item.name" (change)="set_neighborhood($event); filter()" class="checkbox__input" />
+                    <input type="checkbox" [ngModel]="_valueNeighborhood?.includes(item.id.toString()) ? true : false"
+                        [value]="item.id" (change)="set_neighborhood($event); filter()" class="checkbox__input" />
                     <span class="checkbox__checkmark"></span>
                     <span>{{item.name}}</span>
                     <!-- <span class="numder"> 33 </span> -->
@@ -55,8 +59,10 @@
             </div>
             <!-- <span class="ThisShow-more" (click)="thisType = 'InOpen'">Show more</span> -->
             <div class="click-more mt-2">
-                <span  class="ThisShow-more" (click)="Thistype = 'OnActive'" [ngClass]="{'new-active': Thistype === 'THEactive'}">Show more</span>
-                <span class="ThisShow-more " (click)="Thistype = 'THEactive'" [ngClass]="{'new-active': Thistype === 'OnActive'}">See less</span> 
+                <span class="ThisShow-more" (click)="Thistype = 'OnActive'"
+                    [ngClass]="{'new-active': Thistype === 'THEactive'}">Show more</span>
+                <span class="ThisShow-more " (click)="Thistype = 'THEactive'"
+                    [ngClass]="{'new-active': Thistype === 'OnActive'}">See less</span>
             </div>
         </div>
         <div class="capacity ">
@@ -69,7 +75,8 @@
                 <div *ngIf="!IsCapacity">
                     <div class="price-range" *ngIf="(options$ | async) as option">
                         <input type="number" [(ngModel)]="initial_capacity" (change)="set_capacity()">
-                        <ng5-slider [(value)]="initial_capacity" [options]="option" (mouseup)="set_capacity()"></ng5-slider>
+                        <ng5-slider [(value)]="initial_capacity" [options]="option" (mouseup)="set_capacity()">
+                        </ng5-slider>
                     </div>
                 </div>
             </div>
@@ -108,24 +115,25 @@
                     <span>Price</span>
                     <mat-icon (click)="thePrice()">expand_less</mat-icon>
                 </div>
-              <div *ngIf="!Price">
-                <div class="price-range" *ngIf="(optionsPrice$ | async) as optionPrice">
-                    <div class="from-to d-flex justify-content-between">
-                        <p>From <input type="number" [(ngModel)]="initial_price_min_value" (change)="set_price()"></p>
-                        <p>To <input type="number" [(ngModel)]="initial_price_max_value" (change)="set_price()"></p>
+                <div *ngIf="!Price">
+                    <div class="price-range" *ngIf="(optionsPrice$ | async) as optionPrice">
+                        <div class="from-to d-flex justify-content-between">
+                            <p>From <input type="number" [(ngModel)]="initial_price_min_value" (change)="set_price()">
+                            </p>
+                            <p>To <input type="number" [(ngModel)]="initial_price_max_value" (change)="set_price()"></p>
+                        </div>
+                        <ng5-slider [(value)]="initial_price_min_value" [(highValue)]="initial_price_max_value"
+                            [options]="optionPrice" (mouseup)="set_price()">
+                        </ng5-slider>
                     </div>
-                    <ng5-slider [(value)]="initial_price_min_value" [(highValue)]="initial_price_max_value"
-                        [options]="optionPrice" (mouseup)="set_price()">
-                    </ng5-slider>
                 </div>
-              </div>
             </div>
         </div>
 
     </div>
     <div class=" right-side-home-catering" *ngIf="total">
         <div class="top-title-detile" [ngClass]="{'NewIcon': lang == 'ar'}" [dir]="dir">
-            <div class="result" *ngIf="searchDate.search" >
+            <div class="result" *ngIf="searchDate.search">
                 Results of <a href="#">{{searchDate.search}}</a> in <a href="#">{{city}}</a>
             </div>
             <div class="result" *ngIf="!searchDate.search">
@@ -216,7 +224,7 @@
             </a> -->
         </div>
         <div class="vertical-card mb-5" [ngClass]="{'list': type === 'vertical'}">
-            <div *ngFor="let service of result" >
+            <div *ngFor="let service of result">
                 <app-vertical-card-venue-services [service]="service"></app-vertical-card-venue-services>
             </div>
         </div>
@@ -224,4 +232,6 @@
             <pagination-controls class="paginate" (pageChange)="getPage($event)"></pagination-controls>
         </div>
     </div>
+    <div *ngIf="!total">there is no data</div>
+
 </div>

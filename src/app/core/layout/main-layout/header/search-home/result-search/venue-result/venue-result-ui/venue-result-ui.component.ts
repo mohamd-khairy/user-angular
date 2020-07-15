@@ -43,8 +43,8 @@ export class VenueResultUiComponent implements OnInit {
   public initial_price_max_value;
   // public Thetype = 'NotOpen';
   // public thisType = 'OnChange';
-   Tistype = 'active';
-   Thistype = 'THEactive';
+  Tistype = 'active';
+  Thistype = 'THEactive';
 
   private _state;
   public result = null;
@@ -160,7 +160,7 @@ export class VenueResultUiComponent implements OnInit {
     }
   }
 
-  constructor(@Inject(LOCALE_ID) public lang: string,private headerService: HeaderService, private router: Router, private route: ActivatedRoute) {
+  constructor(@Inject(LOCALE_ID) public lang: string, private headerService: HeaderService, private router: Router, private route: ActivatedRoute) {
     this.check_found_filters();
     this.check_search_data();
     this.check_not_found_filters();
@@ -174,14 +174,12 @@ export class VenueResultUiComponent implements OnInit {
     }, 1000);
   }
 
-
   ngOnInit(): void {
     if (this.lang === 'ar') {
       this.dir = 'rtl';
     } else {
       this.dir = 'ltr';
     }
-
   }
 
   set_capacity() {
@@ -197,11 +195,11 @@ export class VenueResultUiComponent implements OnInit {
 
   getPage(page: number) {
     this.check_not_found_filters();
-    this.headerService.filter_search_result(this.searchDate, page, 12, this.filters)
+    this.headerService.filter_search_result(this.active_searchData, page, 30, this.filters)
   }
 
   filter() {
-    this.headerService.filter_search_result(this.searchDate, this.current_page, 12, this.filters)
+    this.headerService.filter_search_result(this.active_searchData, this.current_page, 30, this.filters)
   }
 
   set_neighborhood(e) {
@@ -258,7 +256,7 @@ export class VenueResultUiComponent implements OnInit {
     }
 
     this.filters.fits_with = JSON.stringify(this._valueFitsWith);
-    if (this.filters.fits_with.length > 2) {
+    if (this._valueFitsWith.length > 0) {
       this.start_fits = false;
     } else {
       this.start_fits = true;
@@ -321,8 +319,8 @@ export class VenueResultUiComponent implements OnInit {
     }
 
     if (!this.route.snapshot.queryParams.neighborhood) {
-      this._valueNeighborhood = this.neighborhood?.map(opt => { return opt.name.toString() });
-      this.filters.neighborhood = JSON.stringify(this.neighborhood?.map(opt => { return opt.name.toString() }));
+      this._valueNeighborhood = this.neighborhood?.map(opt => { return opt.id.toString() });
+      this.filters.neighborhood = JSON.stringify(this.neighborhood?.map(opt => { return opt.id.toString() }));
       this.start_neighborhood = true;
     }
 
@@ -359,9 +357,6 @@ export class VenueResultUiComponent implements OnInit {
     if (this.route.snapshot.queryParams.text) {
       var text = this.route.snapshot.queryParams.text;
     }
-    if (this.route.snapshot.queryParams.category) {
-      var category = this.route.snapshot.queryParams.category;
-    }
     if (this.route.snapshot.queryParams.city) {
       var city = this.route.snapshot.queryParams.city;
     }
@@ -371,6 +366,12 @@ export class VenueResultUiComponent implements OnInit {
     if (this.route.snapshot.queryParams.page_size) {
       var page_size = this.route.snapshot.queryParams.page_size;
     }
+    if (window.location.pathname.indexOf('venue') > -1) {
+      var category = 1;
+    } else if (window.location.pathname.indexOf('catering') > -1) {
+      var category = 2;
+    }
+
     this.active_page = page;
     this.active_page_size = page_size;
 
@@ -379,6 +380,9 @@ export class VenueResultUiComponent implements OnInit {
       'category': category,
       'city': city
     }
+
+    console.log(window.location.pathname.indexOf('venue'));
+
   }
 
   set_found_filters() {
@@ -409,16 +413,16 @@ export class VenueResultUiComponent implements OnInit {
   updatePriceState(currentState) {
     this.storePrice.next((this._Price_options = currentState));
   }
-  TheDisplay(){
+  TheDisplay() {
     this.IsDisplay = !this.IsDisplay;
   }
-  theDistrict(){
+  theDistrict() {
     this.IsDistrict = !this.IsDistrict;
   }
-  theCapacity(){
+  theCapacity() {
     this.IsCapacity = !this.IsCapacity;
   }
-  thePrice(){
+  thePrice() {
     this.Price = !this.Price;
   }
 }
