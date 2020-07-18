@@ -203,6 +203,12 @@ a#dropdownMenuLink:hover {
 .search-box.NewSearch button.The-search-btn.mat-focus-indicator.mat-button.mat-button-base {
     right: 0;
 }
+:host ::ng-deep .search-box.NewSearch .mat-select-panel .mat-option{
+  text-align: right !important;
+  }
+::ng-deep .mat-option.mat-focus-indicator.NewSearch span{
+  text-align: right !important;
+}
 // ***************************************medi-screen*********************************************
  @media only screen and (max-width:1750px){
     .search-box {

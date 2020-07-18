@@ -1,6 +1,8 @@
-<app-sub-header [ngClass]="{'Change-dir': lang == 'ar'}" [dir]="dir" ></app-sub-header>
+<app-sub-header [ngClass]="{'Change-dir': lang == 'ar'}" [dir]="dir"></app-sub-header>
 <app-header [dir]="dir"></app-header>
 <app-nav-bar [dir]="dir"></app-nav-bar>
+<mat-progress-bar *ngIf="loadingService.loading$ | async" mode="indeterminate">
+</mat-progress-bar>
 
 <main [dir]="dir">
   <router-outlet></router-outlet>

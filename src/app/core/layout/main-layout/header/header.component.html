@@ -1,6 +1,9 @@
 <div class="header px-140" [class.header-changed]="change_header">
-  <div class="logo-img">
+  <div class="logo-img" [ngClass]="{ enlogo: lang == 'ar' }" [dir]="dir"> 
     <a href="#"> <img src="assets/Group 825.svg" alt="" /></a>
+  </div>
+  <div class="logo-img arabiclogo" [ngClass]="{ arablogo: lang == 'ar' }" [dir]="dir"> 
+    <a href="#"> <img src="assets/logo_arabic white - horizontal copy.png" alt="" /></a>
   </div>
 
   <div class="w-110"></div>

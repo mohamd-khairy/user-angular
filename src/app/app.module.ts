@@ -26,11 +26,11 @@ registerLocaleData(localeAr, 'ar-EG');
   ],
   providers: [
     httpInterceptorProviders,
-    {
-      provide: LOCALE_ID,
-      deps: [LanguageService],
-      useFactory: (local: LanguageService) => { return local.getLang() }
-    }
+    // {
+    //   provide: LOCALE_ID,
+    //   deps: [LanguageService],
+    //   useFactory: (local: LanguageService) => { return local.getLang() }
+    // }
   ],
   bootstrap: [AppComponent],
 })

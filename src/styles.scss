@@ -6,12 +6,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700;1,900&family=Sansita&display=swap");
 @import "~leaflet/dist/leaflet.css";
+// ************arabic font
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
 
 body {
   height: 100vh;
   overflow-x: hidden;
   text-align: unset !important;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato","Cairo", sans-serif;
 }
 img {
   width: 100%;
@@ -75,6 +80,9 @@ a:hover{
     width: 100%;
     padding: 0 140px;
   }
+  .home-catering{
+    padding: 0 140px;
+  }
 }
 @media only screen and (max-width: 1369px){
   .px-140 {
@@ -87,6 +95,9 @@ a:hover{
     width: 100%;
     padding: 0 120px;
   }
+  .home-catering{
+    padding: 0 120px;
+  }
 }
 @media only screen and (max-width: 1281px){
   .px-140 {
@@ -97,6 +108,9 @@ a:hover{
   } 
   .head{
     width: 100%;
+    padding: 0 100px;
+  }
+  .home-catering{
     padding: 0 100px;
   }
 }

@@ -60,12 +60,19 @@ import { VenueServicePackageComponent } from './layout/main-layout/header/search
 import { VenueServiceOptionComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-service-option/venue-service-option.component';
 // tslint:disable-next-line: max-line-length
 import { VenueGalleryOptionComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/venue-gallery-option.component';
+// tslint:disable-next-line: max-line-length
 import { TheRoyalGalleryComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/the-royal-gallery/the-royal-gallery.component';
+// tslint:disable-next-line: max-line-length
 import { TheVenuePolicyComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/the-venue-policy/the-venue-policy.component';
+// tslint:disable-next-line: max-line-length
 import { TheVenueGalleryComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/the-royal-gallery/the-venue-gallery/the-venue-gallery.component';
+// tslint:disable-next-line: max-line-length
 import { TheMapComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/the-map/the-map.component';
+// tslint:disable-next-line: max-line-length
 import { VenueFacilitiesComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/venue-facilities/venue-facilities.component';
+// tslint:disable-next-line: max-line-length
 import { VenueHallComponent } from './layout/main-layout/header/search-home/result-search/venue-service/venue-service-gallery/venue-gallery-option/venue-hall/venue-hall.component';
+// tslint:disable-next-line: max-line-length
 import { CoverageComponent } from './layout/main-layout/header/search-home/result-search/catering-services/service-gallery/gallery-option/coverage/coverage.component';
 import { Ng5SliderModule } from 'ng5-slider';
 import { CommonModule } from '@angular/common';
@@ -81,15 +88,20 @@ import { AccordionModule } from 'primeng/accordion';
 import { CalendarModule } from 'primeng/calendar';
 import { VenueResultComponent } from './layout/main-layout/header/search-home/result-search/venue-result/venue-result.component';
 import { CateringResultComponent } from './layout/main-layout/header/search-home/result-search/catering-result/catering-result.component';
+// tslint:disable-next-line: max-line-length
 import { CateringResultUiComponent } from './layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component';
+// tslint:disable-next-line: max-line-length
 import { VenueResultUiComponent } from './layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CreateAccountComponent } from './layout/main-layout/header/create-account/create-account.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { SignInAccComponent } from './layout/main-layout/header/create-account/sign-in-acc/sign-in-acc.component';
 import { SignUpAccComponent } from './layout/main-layout/header/create-account/sign-up-acc/sign-up-acc.component';
 import { EditPasswordComponent } from './layout/main-layout/header/create-account/sign-in-acc/edit-password/edit-password.component';
 import { NewSignInComponent } from './layout/main-layout/header/create-account/new-sign-in/new-sign-in.component';
+
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 @NgModule({
   declarations: [
     MainLayoutComponent,
@@ -153,13 +165,14 @@ import { NewSignInComponent } from './layout/main-layout/header/create-account/n
     MatNativeDateModule,
     MatExpansionModule,
     ModalModule.forRoot(),
-     BrowserAnimationsModule,
+    BrowserAnimationsModule,
     // BsDatepickerModule.forRoot(),
     AccordionModule,
     CalendarModule,
     HomeModule,
     NgxPaginationModule,
-    MatTabsModule
+    MatTabsModule,
+    MatProgressBarModule
   ],
   providers: [
     MatDatepickerModule

@@ -6,10 +6,20 @@
   display: flex;
   align-items: center;
   transition: .3s ease-in-out;
+  overflow: hidden;
 }
 .logo-img {
   width: 190px;
   height: 55px;
+}
+.logo-img.enlogo{
+  display: none;
+}
+.logo-img.arabiclogo{
+  display: none;
+}
+.logo-img.arabiclogo.arablogo{
+  display: inline-table;
 }
 .reservation-img{
   top: 8px;

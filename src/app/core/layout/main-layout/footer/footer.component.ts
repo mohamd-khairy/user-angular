@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, LOCALE_ID } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  constructor() {}
+  dir = 'ltr';
+  constructor(@Inject(LOCALE_ID) public lang: string) { }
+  
+  ngOnInit(): void {
+    if (this.lang === 'ar') {
+      this.dir = 'rtl';
+    } else {
+      this.dir = 'ltr';
 
-  ngOnInit(): void {}
+    }
+  }
 }

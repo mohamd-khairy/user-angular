@@ -1,4 +1,5 @@
 import { Component, OnInit, Inject, LOCALE_ID } from '@angular/core';
+import { LoadingService } from 'src/app/shared/services/loading.service';
 
 @Component({
   selector: 'app-main-layout',
@@ -7,7 +8,8 @@ import { Component, OnInit, Inject, LOCALE_ID } from '@angular/core';
 })
 export class MainLayoutComponent implements OnInit {
   dir = 'ltr';
-  constructor(@Inject(LOCALE_ID) public lang: string) {}
+  constructor(@Inject(LOCALE_ID) public lang: string,
+    public loadingService: LoadingService) { }
 
   ngOnInit(): void {
     if (this.lang === 'ar') {

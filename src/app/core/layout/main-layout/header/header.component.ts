@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Inject, LOCALE_ID } from '@angular/core';
 import { HeaderService } from './header.service';
 import { Observable, of } from 'rxjs';
 
@@ -8,8 +8,8 @@ import { Observable, of } from 'rxjs';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-
-  constructor(public headerService: HeaderService) { }
+  dir = 'ltr';
+  constructor(@Inject(LOCALE_ID) public lang: string,public headerService: HeaderService) { }
   state$: Observable<any> = this.headerService.state$;
   autoComplete$: Observable<any> = this.headerService.autoComplete$;
   // tslint:disable-next-line: variable-name
@@ -25,6 +25,15 @@ export class HeaderComponent {
     }
     else {
       this.change_header = false;
+    }
+  }
+  // tslint:disable-next-line: use-lifecycle-interface
+  ngOnInit(): void {
+    if (this.lang === 'ar') {
+      this.dir = 'rtl';
+    } else {
+      this.dir = 'ltr';
+
     }
   }
 }

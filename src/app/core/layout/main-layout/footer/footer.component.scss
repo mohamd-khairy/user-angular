@@ -32,6 +32,7 @@ a {
       font-size: 24px;
       color: #fff;
       margin-bottom: 42px;
+      width: max-content;
     }
     li {
       list-style: none;
@@ -46,6 +47,9 @@ a {
       }
     }
   }
+}
+.details.style:after {
+  left: 0;
 }
 .social-detail {
   width: 350px;
@@ -134,6 +138,13 @@ div.social {
 button.btn.btn-outline-primary.last-btn:hover {
   background: #23a1a2;
   border: 1px solid #23a1a2;
+}
+
+.help-center.Newstyle {
+  direction: ltr;
+  h3,h6{
+    text-align: right;
+  }
 }
 // ***************************************medi-screen*********************************************
 @media only screen and (max-width: 1680px) and (min-width: 1280px) {

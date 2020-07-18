@@ -2,6 +2,14 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="ar" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="4522efe10caa78b79794c0618c7b84f61a00e062" datatype="html">
+        <source>العربيه</source>
+        <target>English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/sub-header/sub-header.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="c7379a3c0fa888c166a7ce10b830007df08a255b" datatype="html">
         <source>Egypt</source>
         <target>مصر</target>
@@ -10,6 +18,7 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
+      <!-- ************** -->
       <trans-unit id="aa8d8957b6a498e6d5b6599c740d7081483178d5" datatype="html">
         <source>
         <x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>Egypt
@@ -44,6 +53,7 @@
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
+      <!-- ************** -->
       <trans-unit id="33eb65b6026a97fa2fcec38045707db31bd2eb76" datatype="html">
         <source>Sell With Us</source>
         <target>تسوق معنا</target>
@@ -52,6 +62,7 @@
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
+      <!-- ************** -->
         <trans-unit id="42f116b968615ce04395314efbf6c7a4408bf328" datatype="html">
         <source>what are you looking for?</source>
         <target>عما تبحث ؟</target>
@@ -60,6 +71,572 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
+      <!-- ************** -->
+       <trans-unit id="browse" datatype="html">
+        <source>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>menu<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> <x id="START_TAG_MAT-ICON_1" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>close<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          Browse Categories
+        </source>
+        <target>
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>menu<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> <x id="START_TAG_MAT-ICON_1" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>close<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          اختر صنف
+        </target>
+          <context-group purpose="location">
+            <context context-type="sourcefile">src/app/core/layout/main-layout/nav-bar/browse-categories-ui/browse-categories-ui.component.html</context>
+            <context context-type="linenumber">4</context>
+          </context-group>
+      </trans-unit>
+      <!-- ************ -->
+        <trans-unit id="explore" datatype="html">
+        <source>EXPLORE OUR CATEGORIES</source>
+         <target>استكشف فئاتنا </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/explore-categories/explore-categories-ui/explore-categories-ui.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <!-- ********** -->
+        <trans-unit id="bntdiscover" datatype="html">
+        <source> Discover more  </source>
+        <target> إكتشف أكثر </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/events-container/events-ui/events-ui.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <!-- ************** -->
+      <trans-unit id="tvenues" datatype="html">
+      <source>venues</source>
+        <target>أماكن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/venues/venues-ui/venues-ui.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+       <!-- ************** -->
+     <trans-unit id="startfrom" datatype="html">
+        <source>Starts from</source>
+        <target>ابدأ من </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/the-horizental-venue-result/the-horizental-venue-result.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <!-- **************** -->
+       <trans-unit id="wishlistadd" datatype="html">
+        <source>add to wishlist</source>
+        <target>اضف الي المفضلات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/the-horizental-venue-result/the-horizental-venue-result.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+      <trans-unit id="showmore" datatype="html">
+        <source>Show More <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target>اظهر المزيد <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/venues/venues-ui/venues-ui.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <!-- ************* -->
+       <trans-unit id="catering" datatype="html">
+        <source>catering</source>
+        <target>تقديم الطعام</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/catering/catering-ui/catering-ui.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <!-- **************** -->
+      <trans-unit id="discovercity" datatype="html">
+        <source>Discover by cities</source>
+        <target>اكتشف حب المدينه</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/discover-by-cities/discover-by-cities-ui/discover-by-cities-ui.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************** -->
+      <trans-unit id="newourblog" datatype="html">
+        <source>New in our Blog</source>
+        <target>الجديد في مدونتنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/blog-container/blog-ui/blog-ui.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <!-- ***************** -->
+       <trans-unit id="readmore" datatype="html">
+        <source>Read more</source>
+        <target>أقرأ المزيد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/blog-container/blog-ui/blog-ui.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <!-- **************** -->
+       <trans-unit id="readmorearticles" datatype="html">
+        <source> Read More Articles</source>
+        <target> اقرأ المزيد من المقالات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/blog-container/blog-ui/blog-ui.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************** -->
+      <trans-unit id="hotelhalls" datatype="html">
+        <source>Hotel Halls</source>
+        <target>قاعات القنادق</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+      <trans-unit id="yachts" datatype="html">
+        <source>Yachts &amp; Boats</source>
+        <target>يخوت &amp; مراكب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+      <trans-unit id="coworkingspaces" datatype="html">
+        <source>Coworking Spaces</source>
+        <target>مساحات العمل المشترك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+      <trans-unit id="restaurant" datatype="html">
+        <source>Restaurant</source>
+        <target>مطعم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+      <trans-unit id="weddingcake" datatype="html">
+        <source>Wedding Cake</source>
+        <target>كعكه العرس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+       <trans-unit id="lastexplore" datatype="html">
+        <source>Explore</source>
+        <target>اكتشف</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+        <trans-unit id="knowus" datatype="html">
+        <source>Know us</source>
+        <target>إعرفنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <!-- ***************** -->
+      <trans-unit id="aboutus" datatype="html">
+        <source>About us</source>
+        <target>معلومات عنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************** -->
+      <trans-unit id="howworks" datatype="html">
+        <source>How it works</source>
+        <target>كيف تعمل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+       <trans-unit id="blog" datatype="html">
+        <source>Blog</source>
+        <target>مدونة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <!-- ************** -->
+      <trans-unit id="makemoney" datatype="html">
+        <source>Make money</source>
+        <target>اصنع مال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <!-- ************ -->
+       <trans-unit id="affiliateprogram" datatype="html">
+        <source>Affiliate program</source>
+        <target>إنضم لبرنامج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************** -->
+      <trans-unit id="helpcenter" datatype="html">
+        <source>Help center</source>
+        <target>مركز المساعدة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <!-- **************** -->
+        <trans-unit id="wearethereforyou" datatype="html">
+        <source>We are there for you…</source>
+         <target>نحن هناك من أجلك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <!-- ***************** -->
+         <trans-unit id="reachus" datatype="html">
+         <source>Reach us everywhere</source>
+        <target>تصل إلينا في كل مكان</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <!-- ********************* -->
+       <trans-unit id="privacyPolicy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>سياسةالخصوصية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************* -->
+      <trans-unit id="Terms" datatype="html">
+        <source>Terms &amp; Conditions</source>
+        <target>شروط &amp; الظروف</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <!-- ********************* -->
+      <trans-unit id="sitemap" datatype="html">
+        <source>Sitemap</source>
+        <target>خريطة الموقع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************* -->
+      <trans-unit id="allrightsreserved" datatype="html">
+        <source>
+          <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> 2020 Evntoo,
+          LCC. All rights reserved</source>
+          <target>
+          <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/> 
+        جميع الحقوق محفوظه .ايفنتو 2020 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/footer/footer.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <!-- ******************* -->
+       <trans-unit id="SearchType" datatype="html">
+        <source> Search Type </source>
+        <target> نوع البحث </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <!-- ****************** -->
+       <trans-unit id="Packages" datatype="html">
+        <source>Packages</source>
+        <target>الحزم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <!-- ***************** -->
+       <trans-unit id="Offers" datatype="html">
+        <source>Offers</source>
+        <target>العروض</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <!-- **************** -->
+       <trans-unit id="VenueType" datatype="html">
+        <source> Venue Type </source>
+        <target> نوع المكان</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+     <trans-unit id="District" datatype="html">
+        <source> District </source>
+        <target> منطقة </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+     <trans-unit id="Capacity" datatype="html">
+        <source>Capacity</source>
+        <target>سعة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+    <trans-unit id="Price" datatype="html">
+        <source>Price</source>
+        <target>السعر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+      <trans-unit id="cateringservice" datatype="html">
+        <source> Catering Service </source>
+        <target> خدمات الطعام </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+      <trans-unit id="CuisineType" datatype="html">
+        <source> Cuisine Type </source>
+        <target> نوع المطبخ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+          <trans-unit id="theresultsof" datatype="html">
+        <source>
+            <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+                Results of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION" equiv-text="{{searchDate.search}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+                Results of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="START_TAG_DIV_5" ctype="x-div" equiv-text="&lt;div&gt;"/>
+                <x id="START_TAG_DIV_2" ctype="x-div" equiv-text="&lt;div&gt;"/>
+                    Venue Type
+                <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+                <x id="START_TAG_DIV_4" ctype="x-div" equiv-text="&lt;div&gt;"/>
+                    <x id="START_TAG_DIV_3" ctype="x-div" equiv-text="&lt;div&gt;"/>
+                        <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/> <x id="INTERPOLATION_2" equiv-text="{{item.name}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                        <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>cancel
+                        <x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+                    <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+                <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+           </source>
+          <target>
+            <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+           نتيجه البحث عن  <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION" equiv-text="{{searchDate.search}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> في <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+            نتيجه البحث عن <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="START_TAG_DIV_5" ctype="x-div" equiv-text="&lt;div&gt;"/>
+            <x id="START_TAG_DIV_2" ctype="x-div" equiv-text="&lt;div&gt;"/>
+            نوع المكان
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="START_TAG_DIV_4" ctype="x-div" equiv-text="&lt;div&gt;"/>
+            <x id="START_TAG_DIV_3" ctype="x-div" equiv-text="&lt;div&gt;"/>
+            <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/> <x id="INTERPOLATION_2" equiv-text="{{item.name}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>cancel
+            <x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+    <trans-unit id="fitswith" datatype="html">
+        <source>Fits With:</source>
+        <target>يناسب:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+       <trans-unit id="Sortby" datatype="html">
+        <source>Sort by :
+                        <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>
+                            <x id="START_TAG_SELECT" ctype="x-select" equiv-text="&lt;select&gt;"/>
+                                <x id="START_TAG_OPTION" ctype="x-option" equiv-text="&lt;option&gt;"/>Price<x id="CLOSE_TAG_OPTION" ctype="x-option" equiv-text="&lt;/option&gt;"/>
+                                <x id="START_TAG_OPTION_1" ctype="x-option" equiv-text="&lt;option&gt;"/>top<x id="CLOSE_TAG_OPTION" ctype="x-option" equiv-text="&lt;/option&gt;"/>
+                                <x id="START_TAG_OPTION_2" ctype="x-option" equiv-text="&lt;option&gt;"/>bottom<x id="CLOSE_TAG_OPTION" ctype="x-option" equiv-text="&lt;/option&gt;"/>
+                            <x id="CLOSE_TAG_SELECT" ctype="x-select" equiv-text="&lt;/select&gt;"/>
+                        <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+         </source>
+          <target>صنف حسب :
+                        <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>
+                            <x id="START_TAG_SELECT" ctype="x-select" equiv-text="&lt;select&gt;"/>
+                                <x id="START_TAG_OPTION" ctype="x-option" equiv-text="&lt;option&gt;"/>السعر<x id="CLOSE_TAG_OPTION" ctype="x-option" equiv-text="&lt;/option&gt;"/>
+                                <x id="START_TAG_OPTION_1" ctype="x-option" equiv-text="&lt;option&gt;"/>الاعلي<x id="CLOSE_TAG_OPTION" ctype="x-option" equiv-text="&lt;/option&gt;"/>
+                                <x id="START_TAG_OPTION_2" ctype="x-option" equiv-text="&lt;option&gt;"/>الاقل<x id="CLOSE_TAG_OPTION" ctype="x-option" equiv-text="&lt;/option&gt;"/>
+                            <x id="CLOSE_TAG_SELECT" ctype="x-select" equiv-text="&lt;/select&gt;"/>
+                        <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+         </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+    <trans-unit id="moreless" datatype="html">
+        <source>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Show more<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/>See less<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>اظهر المزيد<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/>اخفاء<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+    <trans-unit id="titlvenue" datatype="html">
+        <source> <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>keyboard_arrow_right<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> Catering
+        </source>
+          <target> <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>الرئيسيه<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+            <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>keyboard_arrow_left<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>مكان
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+        <trans-unit id="fromto" datatype="html">
+          <source>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>From <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+            <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>To <x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          </source>
+           <target>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>من <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+            <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+            <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>الي <x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/><x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/venue-result/venue-result-ui/venue-result-ui.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+    <trans-unit id="thetitlecatering" datatype="html">
+        <source>
+            <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>keyboard_arrow_right<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/> Catering
+            <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        </source>
+         <target>
+            <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>الرئيسية<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>keyboard_arrow_left<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>تقديم الطعام
+            <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+     <trans-unit id="resultsof" datatype="html">
+        <source>
+          <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+          Results of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION" equiv-text="{{searchDate.search}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> in <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+          <x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+          Results of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+          نتيجة البحث عن <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION" equiv-text="{{searchDate.search}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> في <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+          <x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+          نتيجة البحث عن <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/><x id="INTERPOLATION_1" equiv-text="{{city}}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/layout/main-layout/header/search-home/result-search/catering-result/catering-result-ui/catering-result-ui.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+    <!-- **************** -->
+    <!-- **************** -->
+    <!-- **************** -->
+
     </body>
   </file>
 </xliff>

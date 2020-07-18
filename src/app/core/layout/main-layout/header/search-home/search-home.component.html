@@ -1,8 +1,8 @@
 <div class="search-box" [ngClass]="{'NewSearch': lang == 'ar'}" [dir]="dir">
-  <form class="searching d-flex h-100" *ngIf="state" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+  <form class="searching d-flex h-100" *ngIf="state" [formGroup]="searchForm" (ngSubmit)="onSubmit()" >
     <mat-form-field appearance="outline" class="search-Thename">
       <mat-select formControlName="category">
-        <mat-option *ngFor="let category of state.categories" [value]="category.id" class="opt-mat">
+        <mat-option *ngFor="let category of state.categories" [value]="category.id" class="opt-mat" [ngClass]="{'NewSearch': lang == 'ar'}" [dir]="dir">
           {{ category.name }}
         </mat-option>
       </mat-select>
@@ -11,7 +11,7 @@
     <span class="w-between"></span>
     <mat-form-field appearance="outline" class="search-Thename">
       <mat-select formControlName="city">
-        <mat-option *ngFor="let city of state.cities" [value]="city.key">
+        <mat-option *ngFor="let city of state.cities" [value]="city.key" [ngClass]="{'NewSearch': lang == 'ar'}" [dir]="dir">
           {{ city.name }}
         </mat-option>
       </mat-select>

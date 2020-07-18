@@ -1,0 +1,26 @@
+
+<div class="img-slider" >
+  <div class="the-img-slider d-block" [ngClass]="{'NewIcon': lang == 'ar'}" [dir]="dir">
+      <div class="slider-img">
+          <img [src]="service.image ? service.image : 'assets/OGF9H290.png'" alt="" />
+          <span class="icon">
+              <mat-icon>favorite_border</mat-icon>
+              <em class="add-list" i18n="@@wishlistadd">add to wishlist</em>
+          </span>
+      </div>
+      <span class="descound" *ngIf="service.offer">
+          {{ service.offer }}
+      </span>
+      <div class="detil">
+          <h6>{{ service.name }}</h6>
+          <span i18n="@@startfrom">Starts from</span>
+          <h3>{{ service.price }}</h3>
+          <h5>
+              <em><span *ngIf="service.subCategory">{{service.subCategory}}</span>
+                  <mat-icon>people_outline</mat-icon>{{ service.max_num_order }}
+              </em>
+          </h5>
+      </div>
+  </div>
+
+</div>

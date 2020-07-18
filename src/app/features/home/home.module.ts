@@ -47,6 +47,10 @@ import { TheFilterComponent } from './catering/results-package/the-filter/the-fi
 import { ResultsPackageContentComponent } from './catering/results-package/results-package-content/results-package-content.component';
 import { ResultsPackageCarrdComponent } from './results-package-carrd/results-package-carrd.component';
 import { ResultsPackageVerticalComponent } from './results-package-vertical/results-package-vertical.component';
+import { TheVerticalCateringResultComponent } from './the-vertical-catering-result/the-vertical-catering-result.component';
+import { TheHorizentalCateringResultComponent } from './the-horizental-catering-result/the-horizental-catering-result.component';
+import { TheHorizentalVenueResultComponent } from './the-horizental-venue-result/the-horizental-venue-result.component';
+import { TheVerticalVenueResultComponent } from './the-vertical-venue-result/the-vertical-venue-result.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -84,6 +88,10 @@ import { ResultsPackageVerticalComponent } from './results-package-vertical/resu
     ResultsPackageContentComponent,
     ResultsPackageCarrdComponent,
     ResultsPackageVerticalComponent,
+    TheVerticalCateringResultComponent,
+    TheHorizentalCateringResultComponent,
+    TheHorizentalVenueResultComponent,
+    TheVerticalVenueResultComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
@@ -107,7 +115,11 @@ import { ResultsPackageVerticalComponent } from './results-package-vertical/resu
     AddOnsCardComponent,
     ResultsPackageCarrdComponent,
     ResultsPackageVerticalComponent,
-    VerticalCardVenueServicesComponent
+    VerticalCardVenueServicesComponent,
+    TheVerticalCateringResultComponent,
+    TheHorizentalCateringResultComponent,
+    TheHorizentalVenueResultComponent,
+    TheVerticalVenueResultComponent,
   ]
 })
 export class HomeModule { }

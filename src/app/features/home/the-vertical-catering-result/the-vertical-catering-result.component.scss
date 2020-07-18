@@ -1,0 +1,202 @@
+
+.slider-img {
+  position: relative;
+  margin: 0 8px;
+  width: 450px;
+  height: 300px;
+  .icon {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 38px;
+    height: 38px;
+    margin: 10px;
+    color: #23a1a2;
+    direction: initial;
+  }
+}
+.img-slider{
+  position: relative;
+  cursor: pointer;
+}
+.detil h6 {
+  font-size: 22px;
+  margin: 14px;
+  color: #000000;
+}
+.the-img-slider span {
+  margin: 14px;
+  font-size: 16px;
+  color: #00000080;
+}
+.the-img-slider h3 {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 28px;
+  font-weight: 500;
+}
+.the-img-slider h5 {
+  margin: 17px;
+  font-size: 16px;
+  margin-top: 0;
+  color: #8686866b;
+  border-top: 1px solid #8686866b;
+  padding-top: 15px;
+
+}
+.img-slider h5 em {
+  margin: 0 15px;
+  font-style: normal;
+  display: flex;
+}
+// i.fa.fa-user {
+//   color: #868686;
+// }
+span.descound {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 107px;
+  height: 36px;
+  background: #f48271;
+  margin: 0 !important;
+  line-height: 38px;
+  border-radius: 4px;
+  color: #fff !important;
+  font-size: 16px;
+  align-items: center;
+  padding: 0 17px;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin: 10px;
+  font-size: 25px !important;
+  color: #23a1a2;
+  z-index: 1;
+  &:hover em.add-list {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+    transform: translateX(-4px);
+    z-index: -1;
+    width: 150px;
+    color: #fff;
+  }
+  &:hover .material-icons {
+    color: #fff !important;
+  }
+}
+.icon:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 6px;
+  background: #ffffffb3;
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  z-index: -1;
+}
+em.add-list {
+  position: absolute;
+  font-size: 14px;
+  width: 100px;
+  right: 0;
+  top: 0;
+  padding: 0 20px;
+  height: 27px;
+  line-height: 25px;
+  border-radius: 19px;
+  transition: 0.3s ease-in-out;
+  transform: translateX(-3px);
+  opacity: 0;
+  visibility: hidden;
+}
+em.add-list:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -1px;
+  width: 100%;
+  background: #23a1a2;
+  height: 40px;
+  z-index: -1;
+  border-radius: 19px;
+}
+span.start {
+  position: absolute;
+  right: 0px;
+  top: 35%;
+  line-height: 4px;
+  font-size: 20px;
+}
+span.items {
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #868686a8;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+// **************************arabic
+.NewVertical span.start {
+  right: unset;
+  left: 0;
+}
+.NewVertical h3 {
+  right: unset !important;
+  left: 0;
+}
+.NewVertical .the-img-slider .icon {
+  left: 7px !important;
+  right: auto;
+}
+.NewVertical .show-more i{
+  transform: rotate(175deg)
+}
+.NewVertical .the-img-slider 
+span.descound {
+  right: 0px !important;
+  left: auto !important;
+  text-align: center;
+}
+.NewVertical .the-img-slider .icon em.add-list{
+  left: 0 !important;
+  transform: translateX(-10px) !important;
+  text-align: right !important;
+}
+.NewVertical .the-img-slider .detil{
+  text-align: right;
+  h5{
+    margin: 17px 0;
+  }
+}
+// ***************************************medi-screen*********************************************
+@media only screen and (max-width:1680px)and (min-width: 1600px){
+
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1600px) and (min-width: 1536px) {
+
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1536px) and (min-width: 1440px){
+
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1440px) and (min-width: 1370px){
+
+}
+// // *************************** end-width ************************************
+@media only screen and (max-width: 1370px) and (min-width: 1280px){
+
+}
+// *************************** end-width ****************************
+@media only screen and (max-width: 1280px) and (min-width: 1200px){
+ 
+}

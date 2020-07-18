@@ -1,5 +1,5 @@
 <div class="container">
-  <h4>venues</h4>
+  <h4 i18n="@@tvenues">venues</h4>
   <ul class="menu">
     <div class="click-now" [ngClass]="{'select': category == (state$ | async).first}" (click)="selectCategory(category)"
       *ngFor="let category of (state$ | async).categories">
@@ -8,7 +8,7 @@
   <div class="slider mt-5">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let service of (state$ | async).services">
-        <div class="img-slider">
+        <!-- <div class="img-slider">
           <div class="the-img-slider d-block">
             <div class="slider-img">
               <img [src]="
@@ -36,104 +36,11 @@
               </h5>
             </div>
           </div>
-        </div>
-        <!-- <app-card-services [service]="service" ></app-card-services> -->
+        </div> -->
+        <app-the-horizental-venue-result [service]="service"></app-the-horizental-venue-result>
       </ng-template>
-      <!-- <ng-template carouselSlide>
-        <div class="img-slider">
-          <div class="the-img-slider d-block">
-            <div class="slider-img">
-              <img src="../../../../assets/OGF9H290.png" alt="" />
-              <span class="icon"
-                ><mat-icon>favorite_border</mat-icon>
-                <em class="add-list">add to wishlist</em>
-              </span>
-            </div>
-            <div class="detil">
-              <h6>Fancy Catering service</h6>
-              <span>Starts from</span>
-              <h3>400,999 EGP</h3>
-              <h5>
-                Maadi <em><i class="fa fa-user"></i> 200</em>
-              </h5>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="img-slider">
-          <div class="the-img-slider d-block">
-            <div class="slider-img">
-              <img src="../../../../assets/OGF9H390.png" alt="" />
-              <span class="icon"
-                ><mat-icon>favorite_border</mat-icon>
-                <em class="add-list">add to wishlist</em>
-              </span>
-            </div>
-            <div class="detil">
-              <h6>Fancy Catering service</h6>
-              <span>Starts from</span>
-              <h3>400,999 EGP</h3>
-              <h5>
-                Maadi <em><i class="fa fa-user"></i> 200</em>
-              </h5>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="img-slider">
-          <div class="the-img-slider d-block">
-            <div class="slider-img">
-              <img src="../../../../assets/OGF9H490.png" alt="" />
-              <span class="icon"
-                ><mat-icon>favorite_border</mat-icon>
-                <em class="add-list">add to wishlist</em>
-              </span>
-            </div>
-            <div class="detil">
-              <h6>Fancy Catering service</h6>
-              <span>Starts from</span>
-              <h3>400,999 EGP</h3>
-              <h5>
-                Maadi <em><i class="fa fa-user"></i> 200</em>
-              </h5>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="img-slider">
-          <div class="the-img-slider d-block">
-            <div class="slider-img">
-              <img src="../../../../assets/OGF9H590.png" alt="" />
-              <span class="icon"
-                ><mat-icon>favorite_border</mat-icon>
-                <em class="add-list">add to wishlist</em>
-              </span>
-            </div>
-            <div class="detil">
-              <h6>Fancy Catering service</h6>
-              <span>Starts from</span>
-              <h3>400,999 EGP</h3>
-              <h5>
-                Maadi <em><i class="fa fa-user"></i> 200</em>
-              </h5>
-            </div>
-          </div>
-        </div>
-      </ng-template> -->
     </owl-carousel-o>
   </div>
-  <div class="show-more">Show More <i class="fa fa-chevron-right"></i></div>
-  <!-- *************************************** -->
-  <!-- <script>
-   $(function() {
-    $('click-now').click( function() {
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-    });
-});
- </script> -->
+  <div class="show-more" i18n="@@showmore">Show More <i class="fa fa-chevron-right"></i></div>
   <!-- **************************************** -->
 </div>

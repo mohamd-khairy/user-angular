@@ -1,19 +1,19 @@
 <div class="head">
-  <h3>New in our Blog</h3>
+  <h3 i18n="@@newourblog">New in our Blog</h3>
   <div class="row">
     <div class="col-4 blog-img" *ngFor="let blog of blogs$ | async">
       <img [src]="blog.image" alt="" />
       <div class="detile">
         <h6>{{ blog.blog_date }}</h6>
         <h4>{{ blog.title }}</h4>
-        <a [href]="blog.link" target="_blank" class="btn btn-outline-primary"
+        <a [href]="blog.link" target="_blank" class="btn btn-outline-primary" i18n="@@readmore"
           >Read more</a
         >
       </div>
     </div>
   </div>
   <div class="d-flex justify-content-center">
-    <a href="#" target="_blank" class="btn btn-outline-primary last-btn">
+    <a href="#" target="_blank" class="btn btn-outline-primary last-btn" i18n="@@readmorearticles">
       Read More Articles
     </a>
   </div>

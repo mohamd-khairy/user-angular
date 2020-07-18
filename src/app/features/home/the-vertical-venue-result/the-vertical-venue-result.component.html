@@ -1,0 +1,32 @@
+<div class="list mb-4" [ngClass]="{'NewVertical': lang == 'ar'}" [dir]="dir">
+
+    <div class="img-slider">
+        <div class="the-img-slider d-flex">
+            <div class="slider-img">
+                <img [src]="service.image ? service.image : 'assets/OGF9H290.png'" alt="" />
+                <span class="icon">
+                    <mat-icon>favorite_border</mat-icon>
+                    <em class="add-list" i18n="@@wishlistadd">add to wishlist</em>
+                </span>
+                <span class="descound" *ngIf="service.offer">
+                    {{ service.offer }}
+                </span>
+            </div>
+            <div class="detil">
+                <h6>{{ service.name }}</h6>
+                <span class="items" *ngIf="service.business_name"> {{service.business_name}} </span>
+                <h5>
+                    <em>
+                        <i class="fa fa-user"></i> {{ service.max_capacity }}
+                    </em>
+
+                    {{service.neighborhood_name}}
+
+                </h5>
+                <!-- *********************** -->
+                <span class="start" i18n="@@startfrom">Starts from</span>
+                <h3>{{ service.min_price }}</h3>
+            </div>
+        </div>
+    </div>
+</div>

@@ -22,11 +22,6 @@ export class VenueResultUiComponent implements OnInit {
     ceil: 300,
     showSelectionBar: true,
   };
-
-  IsDisplay = false;
-  IsDistrict = false;
-  IsCapacity = false;
-  Price = false;
   dir = 'ltr';
   private store = new BehaviorSubject(this._options);
   public options$ = this.store.asObservable();
@@ -41,10 +36,14 @@ export class VenueResultUiComponent implements OnInit {
   public initial_capacity;
   public initial_price_min_value;
   public initial_price_max_value;
-  // public Thetype = 'NotOpen';
-  // public thisType = 'OnChange';
+
   Tistype = 'active';
+  MTistype = 'active';
+  DRistype = 'active';
+  Captype = 'active';
+  PRtype = 'active';
   Thistype = 'THEactive';
+
 
   private _state;
   public result = null;
@@ -168,6 +167,9 @@ export class VenueResultUiComponent implements OnInit {
     this.headerService.search_result(this.active_searchData, this.active_page, this.active_page_size);
 
     setTimeout(() => {
+      if (this.active_page > 1 && this.result?.length < 1) {
+        this.active_page = 1;
+      }
       this.headerService.filter_search_result(this.active_searchData, this.active_page, this.active_page_size, this.active_filters);
       this.set_found_filters();
       this.filters = this.active_filters;
@@ -199,6 +201,7 @@ export class VenueResultUiComponent implements OnInit {
   }
 
   filter() {
+    this.current_page = 1;
     this.headerService.filter_search_result(this.active_searchData, this.current_page, 30, this.filters)
   }
 
@@ -244,6 +247,22 @@ export class VenueResultUiComponent implements OnInit {
     } else {
       this.start_business = true;
     }
+  }
+
+  set_business_types_cards(checkboxId) {
+
+    var index = this._valueBusinessTypes.indexOf(checkboxId.toString());
+    if (index > -1) {
+      this._valueBusinessTypes.splice(index, 1);
+    }
+
+    this.filters.business_types = JSON.stringify(this._valueBusinessTypes);
+    if (this._valueBusinessTypes.length > 0) {
+      this.start_business = false;
+    } else {
+      this.start_business = true;
+    }
+    this.filter();
   }
 
   set_fits_with(checkboxId) {
@@ -389,9 +408,9 @@ export class VenueResultUiComponent implements OnInit {
     this._valueBusinessTypes = this.active_filters.business_types ? JSON.parse(this.active_filters.business_types) : [];
     this._valueNeighborhood = this.active_filters.neighborhood ? JSON.parse(this.active_filters.neighborhood) : [];
     this._valueFitsWith = this.active_filters.fits_with ? JSON.parse(this.active_filters.fits_with) : [];
-    this.initial_capacity = this.active_filters.capacity ?? 1000;
-    this.initial_price_min_value = this.active_filters.min_price ?? 1;
-    this.initial_price_max_value = this.active_filters.max_price ?? 10000;
+    this.initial_capacity = this.active_filters.capacity ?? this.capacity.max;
+    this.initial_price_min_value = this.active_filters.min_price ?? this.price.min;
+    this.initial_price_max_value = this.active_filters.max_price ?? this.price.max;
 
     this.start_business = this.active_filters.business_types ? false : true;
     this.start_fits = this.active_filters.fits_with ? false : true;
@@ -412,17 +431,5 @@ export class VenueResultUiComponent implements OnInit {
 
   updatePriceState(currentState) {
     this.storePrice.next((this._Price_options = currentState));
-  }
-  TheDisplay() {
-    this.IsDisplay = !this.IsDisplay;
-  }
-  theDistrict() {
-    this.IsDistrict = !this.IsDistrict;
-  }
-  theCapacity() {
-    this.IsCapacity = !this.IsCapacity;
-  }
-  thePrice() {
-    this.Price = !this.Price;
   }
 }

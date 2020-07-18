@@ -1,54 +1,54 @@
-<div class="footer w-100">
-  <div class="head">
-    <div class="details">
+<div class="footer w-100" [ngClass]="{ NewNiew: lang == 'ar' }" [dir]="dir">
+  <div class="head" >
+    <div class="details" [ngClass]="{ style: lang == 'ar' }" [dir]="dir">
       <div class="option-detail">
         <ul>
-          <h5>Explore</h5>
+          <h5 i18n="@@lastexplore">Explore</h5>
           <li>
-            <a href="#">
+            <a href="#" i18n="@@tvenues">
               Venues
             </a>
           </li>
-          <li><a href="#">Hotel Halls</a></li>
-          <li><a href="#">Yachts & Boats</a></li>
-          <li><a href="#">Coworking Spaces</a></li>
-          <li><a href="#">Restaurant</a></li>
-          <li><a href="#">Wedding Cake</a></li>
+          <li><a href="#" i18n="@@hotelhalls">Hotel Halls</a></li>
+          <li><a href="#" i18n="@@yachts">Yachts & Boats</a></li>
+          <li><a href="#" i18n="@@coworkingspaces">Coworking Spaces</a></li>
+          <li><a href="#" i18n="@@restaurant">Restaurant</a></li>
+          <li><a href="#" i18n="@@weddingcake">Wedding Cake</a></li>
         </ul>
         <ul>
-          <h5>Know us</h5>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#" target="_blank">Blog</a></li>
+          <h5 i18n="@@knowus">Know us</h5>
+          <li><a href="#" i18n="@@aboutus">About us</a></li>
+          <li><a href="#" i18n="@@howworks">How it works</a></li>
+          <li><a href="#" target="_blank" i18n="@@blog">Blog</a></li>
         </ul>
         <ul>
-          <h5>Make money</h5>
-          <li><a href="#">Affiliate program</a></li>
-          <li><a href="#">Sell with us</a></li>
+          <h5 i18n="@@makemoney">Make money</h5>
+          <li><a href="#" i18n="@@affiliateprogram">Affiliate program</a></li>
+          <li><a href="#" i18n="@@33eb65b6026a97fa2fcec38045707db31bd2eb76">Sell with us</a></li>
         </ul>
       </div>
 
       <div class="social-detail">
-        <div class="help-center">
+        <div class="help-center" [ngClass]="{ Newstyle: lang == 'ar' }" [dir]="dir">
           <div>
             <mat-icon>info_outline</mat-icon>
           </div>
           <div>
-            <h3>Help center</h3>
-            <h6>We are there for you…</h6>
+            <h3 i18n="@@helpcenter">Help center</h3>
+            <h6 i18n="@@wearethereforyou">We are there for you…</h6>
           </div>
         </div>
-        <h5>Reach us everywhere</h5>
+        <h5 i18n="@@reachus">Reach us everywhere</h5>
       </div>
     </div>
     <div class="end">
-      <ul class="detail">
-        <em>
-          <img src="../../../../../assets/component (19).png" /> 2020 Evntoo,
+      <ul class="detail" >
+        <em i18n="@@allrightsreserved">
+          <img src="assets/component (19).png" /> 2020 Evntoo,
           LCC. All rights reserved</em>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Sitemap</a></li>
+        <li><a href="#" i18n="@@privacyPolicy">Privacy Policy</a></li>
+        <li><a href="#" i18n="@@Terms">Terms & Conditions</a></li>
+        <li><a href="#" i18n="@@sitemap">Sitemap</a></li>
         <li>
         </li>
       </ul>

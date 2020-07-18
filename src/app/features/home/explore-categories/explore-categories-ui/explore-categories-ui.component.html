@@ -1,5 +1,5 @@
 <div class="container">
-  <h3>EXPLORE OUR CATEGORIES</h3>
+  <h3 i18n="@@explore">EXPLORE OUR CATEGORIES</h3>
   <ul class="menu">
     <div class="click-now" [ngClass]="{'select': category == cat}" (click)="selectCategory(category)"
       *ngFor="let category of categories">{{ category }}</div>
